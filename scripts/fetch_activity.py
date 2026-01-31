@@ -20,8 +20,8 @@ TRACKED_REPOS = [
     'hvac-mentor',
 ]
 
-# 제외할 레포 패턴
-EXCLUDED_PATTERNS = ['jnd', 'JND']
+# 제외할 레포 패턴 (대소문자 구분 없음)
+EXCLUDED_PATTERNS = ['jnd', 'work-history', 'oh-my-claudecode']
 
 headers = {
     'Authorization': f'token {GITHUB_TOKEN}',
@@ -121,9 +121,10 @@ def fetch_issues(repo, days=90):
 
 
 def get_repo_list():
-    """사용자의 레포 목록 조회 (제외 패턴 적용)"""
-    url = f'{GITHUB_API}/users/{USERNAME}/repos'
-    params = {'per_page': 100, 'sort': 'updated'}
+    """사용자의 레포 목록 조회 (Private 포함, 제외 패턴 적용)"""
+    # /user/repos는 인증된 사용자의 모든 레포 (private 포함) 반환
+    url = f'{GITHUB_API}/user/repos'
+    params = {'per_page': 100, 'sort': 'updated', 'affiliation': 'owner'}
 
     repos = []
     try:
@@ -131,13 +132,18 @@ def get_repo_list():
         if response.status_code == 200:
             for repo in response.json():
                 name = repo['name']
-                # 제외 패턴 체크
+                # 제외 패턴 체크 (대소문자 구분 없음)
                 if any(pattern.lower() in name.lower() for pattern in EXCLUDED_PATTERNS):
+                    print(f"  ⏭️ 제외: {name}")
                     continue
-                # oh-my-claudecode는 fork이므로 제외 (선택사항)
+                # fork는 제외
                 if repo.get('fork'):
+                    print(f"  ⏭️ Fork 제외: {name}")
                     continue
                 repos.append(name)
+        else:
+            print(f"API 응답 오류: {response.status_code} - {response.text}")
+            repos = TRACKED_REPOS
     except Exception as e:
         print(f"Error fetching repo list: {e}")
         repos = TRACKED_REPOS
