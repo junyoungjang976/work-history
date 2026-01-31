@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-31T13:45:28.211395Z",
+  "updated_at": "2026-01-31T13:45:45.407990Z",
   "repos": [
     "work-history",
     "hvac-mentor",
@@ -7,14 +7,14 @@
     "busungtk-docs"
   ],
   "summary": {
-    "total_commits": 16,
+    "total_commits": 17,
     "total_prs": 0,
     "total_issues": 0,
     "active_days": 3
   },
   "daily": {
     "2026-01-31": {
-      "commits": 11,
+      "commits": 12,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -36,6 +36,14 @@
     }
   },
   "commits": [
+    {
+      "sha": "205a45e",
+      "message": "📊 Update work history 2026-01-31",
+      "author": "github-actions[bot]",
+      "date": "2026-01-31T13:45:28Z",
+      "url": "https://github.com/junyoungjang976/work-history/commit/205a45e33ecf923c47e58605bf4fd4de6a9b8d6b",
+      "repo": "work-history"
+    },
     {
       "sha": "8638f0d",
       "message": "🚀 Initial setup: 작업 히스토리 대시보드",
