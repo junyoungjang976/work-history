@@ -47,6 +47,12 @@
             <canvas id="activity-chart" height="100"></canvas>
         </div>
 
+        <!-- Search -->
+        <div class="mb-4">
+            <input type="text" id="search-input" placeholder="커밋 메시지, 레포 검색..."
+                   class="w-full md:w-96 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+
         <!-- Repo Filter -->
         <div class="flex gap-2 mb-4 flex-wrap" id="repo-filter">
             <button class="px-3 py-1 rounded-full text-sm bg-blue-600 text-white" data-repo="all">전체</button>
@@ -71,6 +77,7 @@
         let data = null;
         let currentTab = 'commits';
         let currentRepo = 'all';
+        let searchQuery = '';
         let chart = null;
 
         async function loadData() {
@@ -152,9 +159,13 @@
         function renderContent() {
             const content = document.getElementById('content');
             let items = [];
+            const query = searchQuery.toLowerCase();
 
             if (currentTab === 'commits') {
-                items = data.commits.filter(c => currentRepo === 'all' || c.repo === currentRepo);
+                items = data.commits.filter(c =>
+                    (currentRepo === 'all' || c.repo === currentRepo) &&
+                    (!query || c.message.toLowerCase().includes(query) || c.repo.toLowerCase().includes(query))
+                );
                 content.innerHTML = items.length ? items.map(c => `
                     <div class="commit-line flex items-start gap-4 p-4 border-b">
                         <div class="activity-dot bg-blue-500 mt-2"></div>
@@ -169,7 +180,10 @@
                     </div>
                 `).join('') : '<div class="p-8 text-center text-gray-500">커밋이 없습니다</div>';
             } else if (currentTab === 'prs') {
-                items = data.pull_requests.filter(p => currentRepo === 'all' || p.repo === currentRepo);
+                items = data.pull_requests.filter(p =>
+                    (currentRepo === 'all' || p.repo === currentRepo) &&
+                    (!query || p.title.toLowerCase().includes(query) || p.repo.toLowerCase().includes(query))
+                );
                 content.innerHTML = items.length ? items.map(p => `
                     <div class="commit-line flex items-start gap-4 p-4 border-b">
                         <div class="activity-dot ${p.state === 'open' ? 'bg-green-500' : p.merged_at ? 'bg-purple-500' : 'bg-red-500'} mt-2"></div>
@@ -184,7 +198,10 @@
                     </div>
                 `).join('') : '<div class="p-8 text-center text-gray-500">PR이 없습니다</div>';
             } else {
-                items = data.issues.filter(i => currentRepo === 'all' || i.repo === currentRepo);
+                items = data.issues.filter(i =>
+                    (currentRepo === 'all' || i.repo === currentRepo) &&
+                    (!query || i.title.toLowerCase().includes(query) || i.repo.toLowerCase().includes(query))
+                );
                 content.innerHTML = items.length ? items.map(i => `
                     <div class="commit-line flex items-start gap-4 p-4 border-b">
                         <div class="activity-dot ${i.state === 'open' ? 'bg-green-500' : 'bg-purple-500'} mt-2"></div>
@@ -227,6 +244,12 @@
                 });
                 renderContent();
             };
+        });
+
+        // Search
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            renderContent();
         });
 
         loadData();
