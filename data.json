@@ -1,10 +1,9 @@
 {
-  "updated_at": "2026-01-31T13:45:45.407990Z",
+  "updated_at": "2026-01-31T13:52:09.524894Z",
   "repos": [
-    "work-history",
-    "hvac-mentor",
+    "busungtk-docs",
     "portal",
-    "busungtk-docs"
+    "hvac-mentor"
   ],
   "summary": {
     "total_commits": 17,
@@ -37,20 +36,20 @@
   },
   "commits": [
     {
-      "sha": "205a45e",
-      "message": "📊 Update work history 2026-01-31",
-      "author": "github-actions[bot]",
-      "date": "2026-01-31T13:45:28Z",
-      "url": "https://github.com/junyoungjang976/work-history/commit/205a45e33ecf923c47e58605bf4fd4de6a9b8d6b",
-      "repo": "work-history"
+      "sha": "2582214",
+      "message": "feat: 퀴즈 랜덤 출제 기능 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T13:50:49Z",
+      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/2582214541e5be7cc572c015cf1be860dbfe4eef",
+      "repo": "hvac-mentor"
     },
     {
-      "sha": "8638f0d",
-      "message": "🚀 Initial setup: 작업 히스토리 대시보드",
+      "sha": "71064be",
+      "message": "feat: 스마트폰 회로 가이드에 퀴즈 기능 추가",
       "author": "jangjoonyoung",
-      "date": "2026-01-31T13:45:04Z",
-      "url": "https://github.com/junyoungjang976/work-history/commit/8638f0d2f5fa7c551701f23733fb97c6f5cc9410",
-      "repo": "work-history"
+      "date": "2026-01-31T13:45:58Z",
+      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/71064be4e1221376c30e1c7b272f64d6f28f5830",
+      "repo": "hvac-mentor"
     },
     {
       "sha": "4428e54",
