@@ -1,33 +1,67 @@
 {
-  "updated_at": "2026-01-31T16:16:57.418125Z",
+  "updated_at": "2026-01-31T16:21:05.565540Z",
   "repos": [
+    "field-check",
     "hvac-mentor",
+    "sales-pipeline",
+    "order-tracker",
+    "busung-as",
     "portal",
-    "busungtk-docs"
+    "busungtk-docs",
+    "equipment-manager",
+    "call-manager"
   ],
   "summary": {
-    "total_commits": 19,
+    "total_commits": 120,
     "total_prs": 0,
     "total_issues": 0,
-    "active_days": 3
+    "active_days": 7
   },
   "daily": {
     "2026-01-31": {
-      "commits": 14,
+      "commits": 24,
+      "prs_opened": 0,
+      "prs_merged": 0,
+      "issues_opened": 0,
+      "issues_closed": 0
+    },
+    "2026-01-30": {
+      "commits": 3,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
       "issues_closed": 0
     },
     "2026-01-29": {
-      "commits": 4,
+      "commits": 50,
+      "prs_opened": 0,
+      "prs_merged": 0,
+      "issues_opened": 0,
+      "issues_closed": 0
+    },
+    "2026-01-28": {
+      "commits": 22,
+      "prs_opened": 0,
+      "prs_merged": 0,
+      "issues_opened": 0,
+      "issues_closed": 0
+    },
+    "2026-01-27": {
+      "commits": 11,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
       "issues_closed": 0
     },
     "2026-01-26": {
-      "commits": 1,
+      "commits": 4,
+      "prs_opened": 0,
+      "prs_merged": 0,
+      "issues_opened": 0,
+      "issues_closed": 0
+    },
+    "2026-01-24": {
+      "commits": 6,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -36,12 +70,28 @@
   },
   "commits": [
     {
+      "sha": "ce7a437",
+      "message": "feat: Field Check 대규모 기능 개선",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T14:06:54Z",
+      "url": "https://github.com/junyoungjang976/field-check/commit/ce7a4378446624fa61394cde8f9684621401bcfe",
+      "repo": "field-check"
+    },
+    {
       "sha": "f667756",
       "message": "feat: 태블릿 모드에 냉동 기술 퀴즈 탭 추가",
       "author": "jangjoonyoung",
       "date": "2026-01-31T14:04:26Z",
       "url": "https://github.com/junyoungjang976/hvac-mentor/commit/f6677569e133aac4589a961285094d3ec5f30c7b",
       "repo": "hvac-mentor"
+    },
+    {
+      "sha": "4d541f9",
+      "message": "feat: 이메일 템플릿 추가 및 접수번호 형식 변경",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T14:02:04Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/4d541f9469d8a76a925204bdd0eebae4cb22889f",
+      "repo": "sales-pipeline"
     },
     {
       "sha": "6d747c6",
@@ -84,6 +134,14 @@
       "repo": "hvac-mentor"
     },
     {
+      "sha": "17b6928",
+      "message": "feat: Sales Pipeline 대규모 개선 (Phase 1-4)",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T13:25:38Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/17b69281a9cad928354dae0c63f97c5830dbfa2a",
+      "repo": "sales-pipeline"
+    },
+    {
       "sha": "5f23317",
       "message": "feat: 모바일 최적화 - 스마트폰/태블릿 별도 레이아웃",
       "author": "jangjoonyoung",
@@ -108,6 +166,14 @@
       "repo": "hvac-mentor"
     },
     {
+      "sha": "213aeb3",
+      "message": "docs: 프로젝트 작업 내역 문서 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T12:47:16Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/213aeb34062da29539a12e6097f90206168bb8ef",
+      "repo": "order-tracker"
+    },
+    {
       "sha": "087dd3d",
       "message": "refactor: 고객 보고서 선택형 구조로 개선",
       "author": "jangjoonyoung",
@@ -124,12 +190,52 @@
       "repo": "hvac-mentor"
     },
     {
+      "sha": "7f9ae1a",
+      "message": "fix: 모바일 가로 스크롤 문제 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T12:00:20Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/7f9ae1a95a1000a9b6a31529641840dcdd86c95f",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "ff83688",
+      "message": "fix: 발주 관리 상태 탭 모바일 가로 스크롤 개선",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T11:50:42Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/ff83688da24f1b8555082451f703d2e5d8e3aba8",
+      "repo": "order-tracker"
+    },
+    {
       "sha": "f36d593",
       "message": "feat: 전기 회로 탭 구현 및 HVAC 기술 데이터 확장",
       "author": "jangjoonyoung",
       "date": "2026-01-31T11:44:44Z",
       "url": "https://github.com/junyoungjang976/hvac-mentor/commit/f36d59324b89fb231cc2bb9c281263355ce4e6fb",
       "repo": "hvac-mentor"
+    },
+    {
+      "sha": "2f4495a",
+      "message": "fix: 모바일 헤더 로고 겹침 문제 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T11:44:23Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/2f4495ad031d57e4e7552dfdc64aa9b52c0f8005",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "6792f40",
+      "message": "feat: 전체 페이지 모바일 최적화",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T11:38:24Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/6792f40dd688cad50c25b109988a97d3435c60a6",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "7f00c61",
+      "message": "docs: Add CLAUDE.md for project documentation",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T11:03:11Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/7f00c6187ecd439ea562d24eaea53a88542a35a2",
+      "repo": "sales-pipeline"
     },
     {
       "sha": "ef13fbb",
@@ -146,6 +252,366 @@
       "date": "2026-01-31T11:03:02Z",
       "url": "https://github.com/junyoungjang976/busungtk-docs/commit/de5dc1b014aacfc0f42b29af166a78289f62dfd5",
       "repo": "busungtk-docs"
+    },
+    {
+      "sha": "bf963da",
+      "message": "docs: Add CLAUDE.md for project documentation",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T11:02:58Z",
+      "url": "https://github.com/junyoungjang976/busung-as/commit/bf963da8645d349082dde7b682b2551dd17d52c2",
+      "repo": "busung-as"
+    },
+    {
+      "sha": "41e51e0",
+      "message": "fix: 접수번호를 데이터 고유 번호(rowIndex)로 변경",
+      "author": "junyoungjang976",
+      "date": "2026-01-30T03:54:30Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/41e51e0c5bb69301ad409da58c44ebfbd16db5bb",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "7cb4074",
+      "message": "fix: 칸반 카드 회사명 미상/미입력 시 문의내용 요약 표시",
+      "author": "junyoungjang976",
+      "date": "2026-01-30T03:51:37Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/7cb4074889cde41403b11f0c315845bd5db01b95",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "ca34ae5",
+      "message": "feat: 테이블/모달 UI 개선 및 칸반 드래그앤드롭 활성화",
+      "author": "junyoungjang976",
+      "date": "2026-01-30T03:48:58Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/ca34ae520ff61314fdcec30534fef463727ea680",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "0e00921",
+      "message": "fix: 모달 바깥 영역 클릭시 닫히지 않도록 수정",
+      "author": "장준영",
+      "date": "2026-01-29T20:33:11Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/0e00921ed022d26f5438e95130d46011ce0d0ff7",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "3fde70a",
+      "message": "fix: 프록시 URL을 프로덕션 alias로 변경",
+      "author": "junyoungjang976",
+      "date": "2026-01-29T18:24:44Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/3fde70aae73f4fbc90b0092d4b19e67d665cce17",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "707e4e8",
+      "message": "fix: useNotificationSettings 타입 에러 수정",
+      "author": "장준영",
+      "date": "2026-01-29T18:15:49Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/707e4e8cd3059d514f54de6270d496517a8c815d",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "3ad9ba9",
+      "message": "feat: v3.0 - 알림 시스템 개선 및 UI 업데이트",
+      "author": "장준영",
+      "date": "2026-01-29T18:13:57Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/3ad9ba9badf6c0d65d1800db044019a93d19c11e",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "d50c346",
+      "message": "fix: 로컬 개발 환경 프록시 URL 업데이트",
+      "author": "junyoungjang976",
+      "date": "2026-01-29T18:07:57Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/d50c3464d99f5c0c8b79709952569f171909a811",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "a57b0f4",
+      "message": "fix: remove unused subQuarters import to fix build error",
+      "author": "장준영",
+      "date": "2026-01-29T16:52:12Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/a57b0f41fea72751a535b91255ac14a030f7ae9f",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "754039a",
+      "message": "feat: 사용자 가이드 시스템 및 통계 대시보드 개선",
+      "author": "장준영",
+      "date": "2026-01-29T16:48:05Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/754039af143f44776e3aa97fdadb50a6893c3801",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "6f8fa2e",
+      "message": "feat: 발주 진행 필요 알림 개선 및 도착지 필드 추가",
+      "author": "장준영",
+      "date": "2026-01-29T14:18:12Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/6f8fa2ec40a01c33e0a8164a0dc5a45fd65ed419",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "7e20078",
+      "message": "docs: Claude 작업 지침 추가",
+      "author": "장준영",
+      "date": "2026-01-29T13:24:01Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/7e200789a53fdd2dab4a176ad7d6bd8066d1a0da",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "446390d",
+      "message": "feat: 목록 생성일 표시, 견적요청 모달, 품목 체크박스 추가",
+      "author": "장준영",
+      "date": "2026-01-29T13:13:53Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/446390d72a78184aec7f8c632c580f92ee064633",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "f660693",
+      "message": "fix: 발주 목록 안정화 및 거래처 페이지네이션 복구",
+      "author": "장준영",
+      "date": "2026-01-29T13:06:12Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/f6606932d6343611cb4c7e304518f251428c7c0b",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "877824f",
+      "message": "feat: 매입가/판매가 구분 및 프로젝트 대시보드 추가",
+      "author": "장준영",
+      "date": "2026-01-29T12:59:51Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/877824fc6ec0efd15a7af76d9bf1320a9fbc3539",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "60bc0d3",
+      "message": "feat: 입금 확인 모달 개선 및 업체 계좌 정보 추가",
+      "author": "장준영",
+      "date": "2026-01-29T12:56:11Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/60bc0d35dd246eb11c86ca593c2db3c77dc74688",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "faff08a",
+      "message": "fix: 품목 복사 기능 prefill 데이터 적용 수정",
+      "author": "장준영",
+      "date": "2026-01-29T12:33:25Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/faff08a4e77241e087c12d75434bcb20ea94ac2f",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "798c465",
+      "message": "feat: 발주 정보 섹션 개선 및 품목 복사 기능 추가",
+      "author": "장준영",
+      "date": "2026-01-29T10:32:04Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/798c465982bce12ca287f472ab9955ae614ff2c4",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "173bb21",
+      "message": "feat: 납품 완료 모달 추가",
+      "author": "장준영",
+      "date": "2026-01-29T10:27:36Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/173bb211ceec106e8d912ce89f61c8dce359d6f5",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "8071658",
+      "message": "refactor: 출고 상태 완전 제거 및 용어 통일",
+      "author": "장준영",
+      "date": "2026-01-29T10:21:11Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/80716587afea45bf245b4b5db43dbb5a8ead0527",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "96bb4d1",
+      "message": "refactor: 출고 완료 상태 제거",
+      "author": "장준영",
+      "date": "2026-01-29T10:03:49Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/96bb4d1849c6cc956f59ce0c8f91a76cdc362248",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "89bd8c3",
+      "message": "feat: 발주서 PDF에 회사 정보 및 인감 추가",
+      "author": "장준영",
+      "date": "2026-01-29T09:38:37Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/89bd8c3a63d7045bb834f6905f3ecd9dc483e511",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "79178f4",
+      "message": "feat: 발주서 PDF 페이지 추가",
+      "author": "장준영",
+      "date": "2026-01-29T09:33:16Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/79178f4777eefe03eedc24b4a1ad459e11386da1",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "86eecef",
+      "message": "docs: v2.1.0 changelog 추가",
+      "author": "장준영",
+      "date": "2026-01-29T09:19:10Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/86eecef96ce8871671e4fe35c3fcd6bd115219e1",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "cfbbb5e",
+      "message": "feat: 발주 확정 모달 개선 - 납품 정보 및 알림 선택",
+      "author": "장준영",
+      "date": "2026-01-29T09:18:50Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/cfbbb5ed25f722f8b9417ae7310010d6b6a44eac",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "c7c8599",
+      "message": "docs: 버전 기록 문서 추가",
+      "author": "장준영",
+      "date": "2026-01-29T09:10:47Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/c7c85990507696364216a0691a950913d6feba53",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "6a71281",
+      "message": "feat: 발주 취소 시 알림 발송 기능 추가",
+      "author": "장준영",
+      "date": "2026-01-29T09:08:12Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/6a71281b7ae7cd8138d532c6d69d746f0555606c",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "ed604e4",
+      "message": "fix: 발주 확정 시 알림톡 발송 및 카카오 ID 필드 제거",
+      "author": "장준영",
+      "date": "2026-01-29T08:57:37Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/ed604e47e100290d6164cbbb6ff75502d05f583e",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "b0bf5ff",
+      "message": "fix: show payment steps in status flow for prepaid vendors",
+      "author": "장준영",
+      "date": "2026-01-29T08:44:39Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/b0bf5ffbace7cff05b4aaf295aaf3b9877540799",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "7799e80",
+      "message": "fix: correct order flow and add payment modal for prepaid vendors",
+      "author": "장준영",
+      "date": "2026-01-29T08:37:47Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/7799e8088e98d9e9b490dd4021e8f59fca5f6d4a",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "1b47cbb",
+      "message": "fix: simplify status update to avoid missing column errors",
+      "author": "장준영",
+      "date": "2026-01-29T08:27:36Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/1b47cbb36b8f3461a76fa46a4ce39734c4a8b525",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "0eee8a4",
+      "message": "fix: pass timestamps in handleStatusChange for v2.0 status flow",
+      "author": "장준영",
+      "date": "2026-01-29T08:20:21Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/0eee8a4c02255ebbdc749dda3aa614f7652a0e81",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "9a0ff95",
+      "message": "fix: update status handling and add payment pending dashboard",
+      "author": "장준영",
+      "date": "2026-01-29T08:15:10Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/9a0ff95c1e3e785540d5a111b7398c2dda9ba51d",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "63d06b5",
+      "message": "feat: implement v2.0 order flow with new status system",
+      "author": "장준영",
+      "date": "2026-01-29T07:52:18Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/63d06b55c830856b13525817c58b74bba509be1e",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "7a63af0",
+      "message": "docs: add ORDER-TRACKER-REQUIREMENTS-v2.md for feature reference",
+      "author": "장준영",
+      "date": "2026-01-29T07:36:10Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/7a63af08bfba09b20152edf80a2c45517a17a566",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "8a61f71",
+      "message": "fix: use correct DB schema fields (site_address, contact_name)",
+      "author": "장준영",
+      "date": "2026-01-29T06:58:27Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/8a61f71f31da1b27cc8f7973f06ca110bde3e7b2",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "19a21d6",
+      "message": "fix: update queries to match actual DB schema",
+      "author": "장준영",
+      "date": "2026-01-29T06:55:34Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/19a21d6af006abe1e409b5c9e2f53b1f345a2742",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "bfdcb8f",
+      "message": "feat(api): add list-orders for debugging",
+      "author": "장준영",
+      "date": "2026-01-29T06:51:26Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/bfdcb8f82d5ed0a90865e02f0d3c0c23d1d0d856",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "26c0948",
+      "message": "feat(api): add preview-notifications for dry-run with real data",
+      "author": "장준영",
+      "date": "2026-01-29T06:49:24Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/26c094886a169e97467b0755ff9ce1075c866a6b",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "12af108",
+      "message": "fix(api): professional message templates with required info",
+      "author": "장준영",
+      "date": "2026-01-29T06:42:35Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/12af10870db6ec4b6e0c9bdf42a72b3b421f895d",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "0ec986f",
+      "message": "fix(api): reminder sends to both vendor AND company",
+      "author": "장준영",
+      "date": "2026-01-29T06:23:07Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/0ec986fc7d020be6886ecbe507245ade6971878b",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "c3d35f7",
+      "message": "feat(api): add test-notifications endpoint and change reminder to D-2, D-day",
+      "author": "장준영",
+      "date": "2026-01-29T06:11:26Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/c3d35f77bb0f29cfedb20be815b6539eb8a679de",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "ce3f166",
+      "message": "refactor(api): replace Resend with Gmail SMTP (nodemailer)",
+      "author": "장준영",
+      "date": "2026-01-29T05:55:44Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/ce3f16684904a795cfd9cc9be421fea483bda314",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "7312c5c",
+      "message": "feat(api): reimplement order-tracker API endpoints with robust error handling",
+      "author": "장준영",
+      "date": "2026-01-29T05:43:40Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/7312c5c2d905a7ccde28afb6794c13b276c8d118",
+      "repo": "order-tracker"
     },
     {
       "sha": "a20d4a1",
@@ -180,12 +646,388 @@
       "repo": "busungtk-docs"
     },
     {
+      "sha": "959dfd1",
+      "message": "fix: Properly handle Supabase join array results",
+      "author": "장준영",
+      "date": "2026-01-29T04:33:31Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/959dfd1bc9a3919032c872143b3fcf589413943e",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "5a0886a",
+      "message": "fix: TypeScript build errors for API endpoints",
+      "author": "장준영",
+      "date": "2026-01-29T04:30:40Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/5a0886a9ac5e07663c578ea129ae65a9a221f63e",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "cfd67e5",
+      "message": "feat: Add Vercel API endpoints for notifications",
+      "author": "장준영",
+      "date": "2026-01-29T04:26:20Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/cfd67e5e896007867ec40df732ad305f3e3dc849",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "c7383ba",
+      "message": "fix: useBlocker 에러 수정 - createBrowserRouter 사용",
+      "author": "jangjoonyoung",
+      "date": "2026-01-29T00:26:30Z",
+      "url": "https://github.com/junyoungjang976/field-check/commit/c7383bab4bef50a75a1414fb40ca9a6e7eae3d3a",
+      "repo": "field-check"
+    },
+    {
+      "sha": "26b1e09",
+      "message": "feat: Phase 2-5 완료 - UX, 기능, 성능, 배포 준비",
+      "author": "jangjoonyoung",
+      "date": "2026-01-29T00:19:24Z",
+      "url": "https://github.com/junyoungjang976/field-check/commit/26b1e09997148db1b9407bd183f0bc99cd3df29c",
+      "repo": "field-check"
+    },
+    {
+      "sha": "46bfe51",
+      "message": "fix: 지역 파싱 로직 대폭 개선",
+      "author": "jangjoonyoung",
+      "date": "2026-01-28T19:24:47Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/46bfe5164718124423d8545403a711ae350395ff",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "f922700",
+      "message": "fix: reminders를 Supabase로 전환 + soft delete 적용",
+      "author": "jangjoonyoung",
+      "date": "2026-01-28T19:11:21Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/f922700f1b93a4a8f95bfe75092d634cc1401056",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "d119d45",
+      "message": "fix: 지역 파싱 로직 개선",
+      "author": "jangjoonyoung",
+      "date": "2026-01-28T18:53:56Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/d119d454003e02a33800ea170c62ff539746bdba",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "81f2236",
+      "message": "feat: 양식화된 메시지만 파싱하도록 개선",
+      "author": "jangjoonyoung",
+      "date": "2026-01-28T18:31:42Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/81f223663a7a9ba6f5d09004247cf3aebadeec3a",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "093d851",
+      "message": "fix: 채널톡 API 인증 방식 변경 (x-access-key/secret 헤더 사용)",
+      "author": "jangjoonyoung",
+      "date": "2026-01-28T18:17:46Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/093d851ac30f7bccfac3f6a24f93b0447d0d41bf",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "ad66269",
+      "message": "fix: 채널톡 팀챗 '영업_견적문의' 채널에서 데이터 가져오도록 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-01-28T18:12:00Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/ad66269bbf58e1538f0baf09447ddf69cc7b4c5d",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "ec167c4",
+      "message": "chore: trigger deployment with env vars configured",
+      "author": "jangjoonyoung",
+      "date": "2026-01-28T18:06:39Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/ec167c48fbf66bbf7f4a2416e9f18a793bca8904",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "8217c21",
+      "message": "chore: trigger deployment with env vars",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T15:03:11Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/8217c21a820b29bac01cfd390b85d0a273b3933c",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "67c7d27",
+      "message": "WIP: Phase 1 개선 작업 진행 중",
+      "author": "junyoungjang976",
+      "date": "2026-01-28T14:57:31Z",
+      "url": "https://github.com/junyoungjang976/field-check/commit/67c7d274e462eb0fb88e7ba7f6b726fa4b36c183",
+      "repo": "field-check"
+    },
+    {
+      "sha": "0d9083d",
+      "message": "chore: trigger Vercel deployment",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T14:43:26Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/0d9083dd2162651afaa8ca46af9bfb6537d430d0",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "d3d4885",
+      "message": "refactor: 코드 품질 개선 및 UX 향상",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T14:33:08Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/d3d4885846d6716105d10f3e9fda9c78536ea38f",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "03fe907",
+      "message": "Add CHANGELOG.md - 작업 히스토리 정리",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T05:03:55Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager/commit/03fe9079977ae3e9a250c38fb60f8a0af2c3bb5f",
+      "repo": "equipment-manager"
+    },
+    {
+      "sha": "9a1a26e",
+      "message": "Initial commit: 장비 관리 시스템 (Equipment Manager)",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:59:59Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager/commit/9a1a26e8a25106d408261cc9765fd89dc5d06f00",
+      "repo": "equipment-manager"
+    },
+    {
+      "sha": "1b271fc",
+      "message": "Trigger deployment for reverted env vars",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:55:51Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/1b271fc6c6c606ee6130298bf16abf75f7005651",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "93b8d01",
+      "message": "Revert sync.js to original state",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:53:40Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/93b8d0176b9f53bce27bd9664562cbd54ddc7be0",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "18d1f51",
+      "message": "Add debug info to sync response",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:48:49Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/18d1f51317493727c92d4035bf4330fa51f32421",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "70a2ebe",
+      "message": "Add debug logging to sync",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:48:37Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/70a2ebede32260c553eb70626af0c364fbdcca5b",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "335b3ff",
+      "message": "Trigger deployment for clean env vars",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:45:57Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/335b3ff77706a9423e7ab01f51d67581c34c77a9",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "832658d",
+      "message": "Trigger deployment for env var update",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:44:01Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/832658d7ca7b836198f0771924b6f374c4f2dd4c",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "b932da6",
+      "message": "Fix Channel Talk API authentication method",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:42:38Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/b932da624af9c37ddee7fe1f398515adfcea0886",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "94e7024",
+      "message": "Add brand field parsing to ChannelTalk sync",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:13:38Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/94e7024b3d263f1440d903977759e55c26321576",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "6ddf6a8",
+      "message": "Add brand column with filtering and fix inline dropdown save",
+      "author": "Junyoung Jang",
+      "date": "2026-01-28T04:09:29Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/6ddf6a805ce2c48e05c21a20806ee8ed87237ec5",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "64157d0",
+      "message": "docs: 2026.01.28 작업 히스토리 추가",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T18:48:53Z",
+      "url": "https://github.com/junyoungjang976/busung-as/commit/64157d02f91fe6978bfcd1f96ff0b02f2cd647da",
+      "repo": "busung-as"
+    },
+    {
+      "sha": "6af4dbb",
+      "message": "feat: Supabase vendors 테이블과 고객명 필드 연동",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T18:28:30Z",
+      "url": "https://github.com/junyoungjang976/busung-as/commit/6af4dbb90040e6684583852e708b86e6f01efbfb",
+      "repo": "busung-as"
+    },
+    {
+      "sha": "c982119",
+      "message": "feat: 사용 가이드 투어 추가 및 TypeScript 오류 수정",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T18:20:22Z",
+      "url": "https://github.com/junyoungjang976/busung-as/commit/c9821195b39d67fad8e5251f11e26c1a91fbe1fc",
+      "repo": "busung-as"
+    },
+    {
+      "sha": "e103e85",
+      "message": "Add README.md with project description and Vercel demo link",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T18:13:09Z",
+      "url": "https://github.com/junyoungjang976/busung-as/commit/e103e85e06b6afd423b9b263544c4b51d5f5ea02",
+      "repo": "busung-as"
+    },
+    {
+      "sha": "a49a411",
+      "message": "Add troubleshooting guide with issue resolution notes",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T18:12:49Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/a49a4113585cf486a4f88f76702513705ef5deb8",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "803ad6c",
+      "message": "Add detailed error logging for debugging save/delete failures",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T18:08:07Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/803ad6c8aa312e87ec012642f4e5932dba7bf678",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "516fe49",
+      "message": "Add edit/delete action buttons and pagination to DataTable",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T17:57:56Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/516fe49938e915415c9bd6f10399a63b458a2547",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "57ec236",
+      "message": "feat: 부성 AS 관리 시스템 초기 구현",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T17:43:55Z",
+      "url": "https://github.com/junyoungjang976/busung-as/commit/57ec236053011f3af10d5fa7be279b3979f2dc4c",
+      "repo": "busung-as"
+    },
+    {
+      "sha": "230c391",
+      "message": "Migrate to Supabase and add 5 new features",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T17:43:27Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/230c391ee025be98a7bf70c27a70158e6db4fec1",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "32fb899",
+      "message": "Fix data save failure by aligning API columns with EditModal fields",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T17:06:25Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/32fb8996c62a1265136353607c9a90a9f178dc3b",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "14c21fd",
+      "message": "Initial commit",
+      "author": "junyoungjang976",
+      "date": "2026-01-27T16:33:16Z",
+      "url": "https://github.com/junyoungjang976/busung-as/commit/14c21fdb98380edb6594cbbca89e06e4cbb6270e",
+      "repo": "busung-as"
+    },
+    {
+      "sha": "c79983d",
+      "message": "Initial commit: Call Manager app",
+      "author": "junyoungjang976",
+      "date": "2026-01-26T15:20:44Z",
+      "url": "https://github.com/junyoungjang976/call-manager/commit/c79983d1e3ca2fb4aac8badf08bee1f09ca61953",
+      "repo": "call-manager"
+    },
+    {
       "sha": "f5a0ab3",
       "message": "Initial commit: HVAC Mentor app",
       "author": "junyoungjang976",
       "date": "2026-01-26T15:18:37Z",
       "url": "https://github.com/junyoungjang976/hvac-mentor/commit/f5a0ab3ee944bd1d5262d296c2cfc22bac05fdd9",
       "repo": "hvac-mentor"
+    },
+    {
+      "sha": "9aa74db",
+      "message": "Initial commit: Field Check app",
+      "author": "junyoungjang976",
+      "date": "2026-01-26T15:17:06Z",
+      "url": "https://github.com/junyoungjang976/field-check/commit/9aa74db4ce8798dccc8e198ef2cf0428c77013cd",
+      "repo": "field-check"
+    },
+    {
+      "sha": "5df9aef",
+      "message": "Initial commit: Sales Pipeline app",
+      "author": "junyoungjang976",
+      "date": "2026-01-26T15:14:38Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/5df9aefac72ff405d20ce0b3fde82ced12a6573c",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "81b9550",
+      "message": "feat: 발주 추적 시스템 기능 확장",
+      "author": "장준영",
+      "date": "2026-01-24T03:56:21Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/81b95503b2f919822dd58795b1707dbdb5efc77f",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "b593255",
+      "message": "chore: remove .env from tracking",
+      "author": "장준영",
+      "date": "2026-01-24T03:25:32Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/b593255c60aee4081049b7c51785ec70ff864f56",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "616d4ce",
+      "message": "feat: 사용 가이드 투어 기능 추가",
+      "author": "장준영",
+      "date": "2026-01-24T03:25:28Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/616d4cef5ff32287ff73e2d6df6f6e7c01433b6b",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "62a0170",
+      "message": "feat: 발주 목록에서 모든 상태 버튼 표시",
+      "author": "장준영",
+      "date": "2026-01-24T03:05:42Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/62a0170bad6b2d85e4558f33e4143795aae13e68",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "5b7d4c3",
+      "message": "feat: 발주 목록에서 빠른 상태 변경 버튼 추가",
+      "author": "장준영",
+      "date": "2026-01-24T03:02:45Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/5b7d4c3a185d753556cafc70c6cc5d1fff08028b",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "4a30d98",
+      "message": "feat: order-tracker 초기 커밋",
+      "author": "장준영",
+      "date": "2026-01-24T02:49:06Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/4a30d9852c9721a982cfea897508ceae740bfcd4",
+      "repo": "order-tracker"
     }
   ],
   "pull_requests": [],
