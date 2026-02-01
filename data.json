@@ -1,10 +1,11 @@
 {
-  "updated_at": "2026-01-31T16:30:18.744298Z",
+  "updated_at": "2026-02-01T01:07:21.333658Z",
   "repos": [
     "field-check",
-    "hvac-mentor",
+    "daily-work-report",
     "sales-pipeline",
     "order-tracker",
+    "hvac-mentor",
     "busung-as",
     "portal",
     "busungtk-docs",
@@ -12,14 +13,14 @@
     "call-manager"
   ],
   "summary": {
-    "total_commits": 120,
+    "total_commits": 136,
     "total_prs": 0,
     "total_issues": 0,
     "active_days": 7
   },
   "daily": {
     "2026-01-31": {
-      "commits": 24,
+      "commits": 40,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -69,6 +70,134 @@
     }
   },
   "commits": [
+    {
+      "sha": "afb0554",
+      "message": "feat: 점검 비교, 후속 조치, 이메일 발송 기능 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T20:35:31Z",
+      "url": "https://github.com/junyoungjang976/field-check/commit/afb0554c2bc7b13bb749c4f6c128c1c2d23f29f6",
+      "repo": "field-check"
+    },
+    {
+      "sha": "15eef4a",
+      "message": "Add popover component",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T20:31:43Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/15eef4a76b6bb589f8c0e1a0f13699c07920c2d0",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "028effd",
+      "message": "Add date picker to daily reports page",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T20:30:51Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/028effd1b5506defb2ae65bd96f5f341764dc986",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "ed0e88a",
+      "message": "Add more debug logging",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T20:26:21Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/ed0e88abc6430dae08361f53f2367c45c34e5e80",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "79ee0c4",
+      "message": "Add debug logging to getWorkReports",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T20:24:24Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/79ee0c43c220b6e364a4e76a5a7d3dce35fcc483",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "7f607fc",
+      "message": "Fix: Use service role key for RLS bypass (no auth mode)",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T20:15:13Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/7f607fc44d4012da270da5a276f32825859cd7c4",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "4b20fe8",
+      "message": "fix: Select 컴포넌트 빈 문자열 value 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T19:34:23Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/4b20fe8deff85eee458de8a173a99cca9c6bbcaa",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "6ea76c7",
+      "message": "fix: Suspense boundary 추가로 클라이언트 오류 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T19:17:23Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/6ea76c7b69acbe17272d8d662e4d8f73ef447fa1",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "1199963",
+      "message": "feat: 로그인 기능 삭제",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T19:13:09Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/1199963b66e6e9379f5e5e4528263484e6dd0123",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "87f7f11",
+      "message": "chore: add storage bucket migration",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T19:09:45Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/87f7f11104c2ed556eda8214bbf5e05b6cda4da9",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "dd4fa2c",
+      "message": "refactor: 액션 현황 탭 불필요한 섹션 삭제",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T19:05:04Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/dd4fa2cb76dc037a0cedd904b9885082c4746d68",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "bfad890",
+      "message": "feat: 일일업무보고 웹 앱 구현",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T18:56:12Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/bfad890a8a537e5a6484cf2e1b37d9ef35dc4b93",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "d89c24c",
+      "message": "feat: 대규모 UI/UX 리뉴얼 및 데이터 정확성 개선",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T18:49:43Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/d89c24cf4e2fb27ab8c74075c6bc9d3a830eae59",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "faa2dc9",
+      "message": "Initial commit from Create Next App",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T17:37:03Z",
+      "url": "https://github.com/junyoungjang976/daily-work-report/commit/faa2dc9f3b199cc1b4eae6f077376bb780240e42",
+      "repo": "daily-work-report"
+    },
+    {
+      "sha": "3313fa4",
+      "message": "feat: 사이드바 하단에 포털 링크 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T16:57:41Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/3313fa4ea2755bb8f8f1cf2057cfa109eb15d7aa",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "f15db18",
+      "message": "feat: 오류 신고 기능 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-01-31T16:57:13Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/f15db18c735097050aa617184c73f8bc23dccf42",
+      "repo": "order-tracker"
+    },
     {
       "sha": "ce7a437",
       "message": "feat: Field Check 대규모 기능 개선",
