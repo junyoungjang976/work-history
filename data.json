@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-04T05:53:49.421222Z",
+  "updated_at": "2026-02-04T06:01:43.940058Z",
   "repos": [
     "busungtk-asms",
     "order-tracker",
@@ -12,14 +12,14 @@
     "kitchen-simulator"
   ],
   "summary": {
-    "total_commits": 159,
+    "total_commits": 160,
     "total_prs": 0,
     "total_issues": 0,
     "active_days": 11
   },
   "daily": {
     "2026-02-04": {
-      "commits": 8,
+      "commits": 9,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -97,6 +97,14 @@
     }
   },
   "commits": [
+    {
+      "sha": "d2758e5",
+      "message": "feat: 견적서에 오설록 단가 자동 선택 기능 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-04T05:59:21Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/d2758e5271212e637dcc2ae3da9a17ff36efa2c3",
+      "repo": "busungtk-asms"
+    },
     {
       "sha": "57364aa",
       "message": "feat: 오설록 자동화 시스템 Phase 1 구현",
