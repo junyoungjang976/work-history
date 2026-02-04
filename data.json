@@ -1,23 +1,30 @@
 {
-  "updated_at": "2026-02-03T01:01:12.559076Z",
+  "updated_at": "2026-02-04T00:56:48.486007Z",
   "repos": [
     "busungtk-asms",
+    "sales-pipeline",
+    "portal",
     "hvac-mentor",
     "purchase-data",
     "field-check",
     "equipment-manager",
     "order-tracker",
-    "kitchen-simulator",
-    "sales-pipeline",
-    "portal"
+    "kitchen-simulator"
   ],
   "summary": {
-    "total_commits": 134,
+    "total_commits": 151,
     "total_prs": 0,
     "total_issues": 0,
-    "active_days": 9
+    "active_days": 10
   },
   "daily": {
+    "2026-02-03": {
+      "commits": 17,
+      "prs_opened": 0,
+      "prs_merged": 0,
+      "issues_opened": 0,
+      "issues_closed": 0
+    },
     "2026-02-02": {
       "commits": 12,
       "prs_opened": 0,
@@ -83,6 +90,142 @@
     }
   },
   "commits": [
+    {
+      "sha": "cefed97",
+      "message": "fix: Vercel SPA 라우팅 설정 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T17:06:30Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/cefed9786002fbcc514fe37d77d1b41d0db167b7",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "85b6301",
+      "message": "docs: 오설록 A/S 자동화 시스템 계획 문서 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T17:05:10Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/85b63010fa0e0f9dcb4db90823941f013fc2535a",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "a64d8ef",
+      "message": "fix: TypeScript 빌드 오류 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T16:58:51Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/a64d8efc54dca72959c2595aaa9b8ab52e596b63",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "0a0f82d",
+      "message": "feat: Excel 견적서 양식 업데이트 (기존 템플릿 형식 적용)",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T16:57:44Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/0a0f82dd390a643753d129cd9c8267cb7efce50d",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "8be334a",
+      "message": "fix: 미사용 변수 제거 (printAreaRef)",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T16:53:52Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/8be334a19763341a046eada102b9487acac36ce7",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "de8307d",
+      "message": "feat: 견적서 PDF/Excel 다운로드 및 404 오류 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T16:52:25Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/de8307dc942670e65b38d9cba70a073537fe0378",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "2997fbe",
+      "message": "fix: TypeScript 타입 오류 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T16:40:22Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/2997fbe4d2000de7f755158a99d608f618b7b7d7",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "1b6adfb",
+      "message": "feat: 상태 동기화 및 삭제 보호 기능 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T16:30:26Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/1b6adfbe047d208faee3898d65433ce2df78a046",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "6c72968",
+      "message": "refactor: 파이프라인 단계 변경 및 액션현황 탭 통합",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T15:54:38Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/6c72968bc9afd12e9a37b013cd069747c45c49bc",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "3dbbe2a",
+      "message": "feat: 사용자 피드백 반영 및 다크/라이트 테마 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-02-03T15:43:26Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/3dbbe2a5b458895eb1c90522e029fbfa1b74785a",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "d888841",
+      "message": "feat: A/S Manager를 ASMS로 변경",
+      "author": "junyoungjang976",
+      "date": "2026-02-03T05:17:44Z",
+      "url": "https://github.com/junyoungjang976/portal/commit/d8888416eeac3f947e13d8a63895dea345e50f31",
+      "repo": "portal"
+    },
+    {
+      "sha": "93ed563",
+      "message": "fix: 미사용 변수 참조 제거",
+      "author": "junyoungjang976",
+      "date": "2026-02-03T05:03:03Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/93ed56322b9782e2e5ae0d18a1ac37f43b3d372b",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "3a48233",
+      "message": "fix: 미사용 변수 제거",
+      "author": "junyoungjang976",
+      "date": "2026-02-03T05:01:52Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/3a482337b2ef3649ff6399fff4499d2e6e663e80",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "b6cf66c",
+      "message": "feat: 목록 페이지 수정/삭제 버튼 추가 및 견적서 상태 동기화 개선",
+      "author": "junyoungjang976",
+      "date": "2026-02-03T04:59:08Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/b6cf66c37df466f01f7839aabfba33401096ccf0",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "a8bc918",
+      "message": "Merge remote-tracking branch 'origin/master'",
+      "author": "junyoungjang976",
+      "date": "2026-02-03T03:53:14Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/a8bc9185d2154dbf5dcab3e4c5ff665bc6c194af",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "3260a16",
+      "message": "feat: 견적서 개선 및 워크플로우 추적 기능 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-03T03:51:01Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/3260a161c13249a362da3ef5c0f3d13bad5dcb11",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "ff02b81",
+      "message": "feat: 로컬 프로젝트 파일 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-03T02:37:58Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/ff02b81cd5a1d97bca5df7a5b8e4899865898b0d",
+      "repo": "busungtk-asms"
+    },
     {
       "sha": "6f10993",
       "message": "fix: TypeScript 빌드 에러 수정",
