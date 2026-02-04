@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-04T05:49:11.613308Z",
+  "updated_at": "2026-02-04T05:53:49.421222Z",
   "repos": [
     "busungtk-asms",
     "order-tracker",
@@ -12,14 +12,14 @@
     "kitchen-simulator"
   ],
   "summary": {
-    "total_commits": 158,
+    "total_commits": 159,
     "total_prs": 0,
     "total_issues": 0,
     "active_days": 11
   },
   "daily": {
     "2026-02-04": {
-      "commits": 7,
+      "commits": 8,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -97,6 +97,14 @@
     }
   },
   "commits": [
+    {
+      "sha": "57364aa",
+      "message": "feat: 오설록 자동화 시스템 Phase 1 구현",
+      "author": "junyoungjang976",
+      "date": "2026-02-04T05:49:12Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/57364aac5fd931c42e88cf6a2a710fc4c2d24b3d",
+      "repo": "busungtk-asms"
+    },
     {
       "sha": "be8b2d4",
       "message": "feat: 견적서 작업자 배정 및 PDF/Excel 개선",
