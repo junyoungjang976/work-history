@@ -10,6 +10,9 @@
         .tab-active { border-bottom: 2px solid #3b82f6; color: #3b82f6; }
         .activity-dot { width: 10px; height: 10px; border-radius: 2px; }
         .commit-line:hover { background-color: #f3f4f6; }
+        .heatmap-cell { width: 20px; height: 20px; border-radius: 3px; font-size: 10px; display: flex; align-items: center; justify-content: center; }
+        .score-ring { transform: rotate(-90deg); }
+        .goal-progress { transition: width 0.5s ease-in-out; }
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
@@ -20,6 +23,91 @@
             <p class="text-gray-600 mt-2">GitHub 활동 대시보드</p>
             <p class="text-sm text-gray-400 mt-1" id="updated-at">마지막 업데이트: 로딩 중...</p>
         </header>
+
+        <!-- Productivity Score Card -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-xl shadow-lg p-6 mb-8 text-white">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <!-- Main Score -->
+                <div class="flex items-center gap-6">
+                    <div class="relative w-32 h-32">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="8"/>
+                            <circle id="score-circle" class="score-ring" cx="50" cy="50" r="45" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="283"/>
+                        </svg>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center">
+                            <span id="total-score" class="text-3xl font-bold">-</span>
+                            <span class="text-xs opacity-80">점</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-semibold mb-2">생산성 점수</h2>
+                        <p class="text-sm opacity-80" id="score-message">분석 중...</p>
+                    </div>
+                </div>
+                
+                <!-- Sub Scores -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="bg-white/10 rounded-lg p-3">
+                        <div id="score-consistency" class="text-2xl font-bold">-</div>
+                        <div class="text-xs opacity-80">꾸준함</div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-3">
+                        <div id="score-focus" class="text-2xl font-bold">-</div>
+                        <div class="text-xs opacity-80">집중도</div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-3">
+                        <div id="score-quality" class="text-2xl font-bold">-</div>
+                        <div class="text-xs opacity-80">품질</div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-3">
+                        <div id="score-growth" class="text-2xl font-bold">-</div>
+                        <div class="text-xs opacity-80">성장</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Streak & Weekly Goal -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <!-- Streak Card -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-900">🔥 연속 활동</h3>
+                    <span id="streak-badge" class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm font-medium">-일</span>
+                </div>
+                <div class="flex items-end gap-4">
+                    <div>
+                        <div id="current-streak" class="text-4xl font-bold text-orange-500">-</div>
+                        <div class="text-sm text-gray-500">현재 연속</div>
+                    </div>
+                    <div class="text-gray-300 text-2xl">/</div>
+                    <div>
+                        <div id="max-streak" class="text-4xl font-bold text-gray-400">-</div>
+                        <div class="text-sm text-gray-500">최장 기록</div>
+                    </div>
+                </div>
+                <div id="streak-message" class="mt-4 text-sm text-gray-600"></div>
+            </div>
+
+            <!-- Weekly Goal Card -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-900">🎯 주간 목표</h3>
+                    <button onclick="openGoalModal()" class="text-blue-600 hover:text-blue-800 text-sm">설정</button>
+                </div>
+                <div class="mb-2 flex justify-between text-sm">
+                    <span id="weekly-current">0</span>
+                    <span id="weekly-goal-text">목표: 70 커밋</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+                    <div id="weekly-progress" class="goal-progress bg-gradient-to-r from-green-400 to-green-600 h-4 rounded-full" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between text-xs text-gray-500">
+                    <span id="weekly-percent">0%</span>
+                    <span id="weekly-remaining">남은 기간: -일</span>
+                </div>
+            </div>
+        </div>
 
         <!-- Summary Cards -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -38,6 +126,34 @@
             <div class="bg-white rounded-lg shadow p-4">
                 <div class="text-3xl font-bold text-orange-600" id="active-days">-</div>
                 <div class="text-gray-600 text-sm">활동일</div>
+            </div>
+        </div>
+
+        <!-- Work Type Analysis & Time Heatmap -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <!-- Work Type Analysis -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-4">📊 작업 유형 분석</h3>
+                <div id="work-type-chart-container">
+                    <canvas id="work-type-chart" height="200"></canvas>
+                </div>
+                <div id="work-type-legend" class="mt-4 grid grid-cols-2 gap-2 text-sm"></div>
+            </div>
+
+            <!-- Time Heatmap -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-4">⏰ 시간대별 활동</h3>
+                <div class="text-sm text-gray-500 mb-2">가장 생산적인 시간: <span id="peak-hour" class="font-semibold text-blue-600">-</span></div>
+                <div id="time-heatmap" class="grid grid-cols-12 gap-1">
+                    <!-- Will be populated by JS -->
+                </div>
+                <div class="flex justify-between text-xs text-gray-400 mt-2">
+                    <span>0시</span>
+                    <span>6시</span>
+                    <span>12시</span>
+                    <span>18시</span>
+                    <span>24시</span>
+                </div>
             </div>
         </div>
 
@@ -73,18 +189,43 @@
         </div>
     </div>
 
+    <!-- Goal Setting Modal -->
+    <div id="goal-modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-xl p-6 w-full max-w-md mx-4">
+            <h3 class="text-xl font-semibold mb-4">주간 목표 설정</h3>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-2">주간 커밋 목표</label>
+                <input type="number" id="goal-input" class="w-full px-4 py-2 border border-gray-300 rounded-lg" value="70" min="1" max="500">
+            </div>
+            <div class="flex gap-2 justify-end">
+                <button onclick="closeGoalModal()" class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">취소</button>
+                <button onclick="saveGoal()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">저장</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         let data = null;
         let currentTab = 'commits';
         let currentRepo = 'all';
         let searchQuery = '';
         let chart = null;
+        let workTypeChart = null;
+
+        // Load weekly goal from localStorage
+        const WEEKLY_GOAL_KEY = 'weeklyCommitGoal';
+        let weeklyGoal = parseInt(localStorage.getItem(WEEKLY_GOAL_KEY)) || 70;
 
         async function loadData() {
             try {
                 const response = await fetch('data.json');
                 data = await response.json();
                 renderDashboard();
+                renderProductivityScore();
+                renderStreak();
+                renderWeeklyGoal();
+                renderWorkTypeAnalysis();
+                renderTimeHeatmap();
             } catch (error) {
                 document.getElementById('content').innerHTML =
                     '<div class="p-8 text-center text-red-500">데이터를 불러올 수 없습니다. GitHub Actions가 실행되면 데이터가 생성됩니다.</div>';
@@ -116,6 +257,256 @@
 
             renderChart();
             renderContent();
+        }
+
+        function renderProductivityScore() {
+            const scores = calculateProductivityScores();
+            
+            // Animate main score
+            const totalScore = Math.round((scores.consistency + scores.focus + scores.quality + scores.growth) / 4);
+            const circle = document.getElementById('score-circle');
+            const scoreOffset = 283 - (283 * totalScore / 100);
+            circle.style.strokeDashoffset = scoreOffset;
+            
+            document.getElementById('total-score').textContent = totalScore;
+            document.getElementById('score-consistency').textContent = scores.consistency + '%';
+            document.getElementById('score-focus').textContent = scores.focus + '%';
+            document.getElementById('score-quality').textContent = scores.quality + '%';
+            document.getElementById('score-growth').textContent = scores.growth.toFixed(0) + '%';
+
+            // Score message
+            let message = '';
+            if (totalScore >= 90) message = '🏆 최고의 성과를 내고 있습니다!';
+            else if (totalScore >= 75) message = '💪 훌륭한 진행 상황입니다!';
+            else if (totalScore >= 60) message = '👍 꾸준히 발전하고 있습니다.';
+            else message = '🌱 조금 더 분발해 봅시다!';
+            document.getElementById('score-message').textContent = message;
+        }
+
+        function calculateProductivityScores() {
+            const dates = Object.keys(data.daily).sort();
+            const totalDays = dates.length > 0 ? 
+                Math.ceil((new Date(dates[dates.length - 1]) - new Date(dates[0])) / (1000 * 60 * 60 * 24)) + 1 : 1;
+            
+            // Consistency: active days / total days
+            const consistency = Math.min(100, Math.round((data.summary.active_days / totalDays) * 100));
+            
+            // Focus: average commits per active day (max at 20 commits/day = 100%)
+            const avgCommitsPerDay = data.summary.total_commits / data.summary.active_days;
+            const focus = Math.min(100, Math.round((avgCommitsPerDay / 20) * 100));
+            
+            // Quality: percentage of commits with proper prefix (feat, fix, refactor, docs, chore)
+            const prefixPattern = /^(feat|fix|refactor|docs|chore|test|style|perf|ci|build|revert)[\(:]/i;
+            const qualityCommits = data.commits.filter(c => prefixPattern.test(c.message)).length;
+            const quality = Math.round((qualityCommits / data.commits.length) * 100);
+            
+            // Growth: compare first half to second half activity
+            const midPoint = Math.floor(dates.length / 2);
+            const firstHalf = dates.slice(0, midPoint).reduce((sum, d) => sum + (data.daily[d]?.commits || 0), 0);
+            const secondHalf = dates.slice(midPoint).reduce((sum, d) => sum + (data.daily[d]?.commits || 0), 0);
+            const growth = firstHalf > 0 ? Math.min(150, Math.round((secondHalf / firstHalf) * 100)) : 100;
+            
+            return { consistency, focus, quality, growth };
+        }
+
+        function renderStreak() {
+            const { current, max } = calculateStreak();
+            
+            document.getElementById('current-streak').textContent = current;
+            document.getElementById('max-streak').textContent = max;
+            document.getElementById('streak-badge').textContent = current + '일';
+            
+            let message = '';
+            if (current === max && current > 0) {
+                message = '🎉 현재 최장 기록을 경신 중입니다!';
+            } else if (current > 0) {
+                message = `최장 기록까지 ${max - current}일 남았습니다. 화이팅!`;
+            } else {
+                message = '오늘부터 새로운 연속 기록을 시작해 보세요!';
+            }
+            document.getElementById('streak-message').textContent = message;
+        }
+
+        function calculateStreak() {
+            const dates = Object.keys(data.daily).sort().reverse(); // newest first
+            if (dates.length === 0) return { current: 0, max: 0 };
+            
+            // Check if today or yesterday has activity (allow 1 day grace)
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const latestDate = new Date(dates[0]);
+            latestDate.setHours(0, 0, 0, 0);
+            
+            const daysSinceLatest = Math.floor((today - latestDate) / (1000 * 60 * 60 * 24));
+            
+            // Calculate current streak
+            let current = 0;
+            if (daysSinceLatest <= 1) { // Active today or yesterday
+                current = 1;
+                for (let i = 1; i < dates.length; i++) {
+                    const prevDate = new Date(dates[i - 1]);
+                    const currDate = new Date(dates[i]);
+                    const diff = Math.floor((prevDate - currDate) / (1000 * 60 * 60 * 24));
+                    if (diff === 1) {
+                        current++;
+                    } else {
+                        break;
+                    }
+                }
+            }
+            
+            // Calculate max streak
+            let max = 1;
+            let tempStreak = 1;
+            const sortedDates = [...dates].sort(); // oldest first
+            for (let i = 1; i < sortedDates.length; i++) {
+                const prevDate = new Date(sortedDates[i - 1]);
+                const currDate = new Date(sortedDates[i]);
+                const diff = Math.floor((currDate - prevDate) / (1000 * 60 * 60 * 24));
+                if (diff === 1) {
+                    tempStreak++;
+                    max = Math.max(max, tempStreak);
+                } else {
+                    tempStreak = 1;
+                }
+            }
+            
+            return { current, max: Math.max(max, current) };
+        }
+
+        function renderWeeklyGoal() {
+            // Get this week's commits (Monday to Sunday)
+            const now = new Date();
+            const dayOfWeek = now.getDay();
+            const monday = new Date(now);
+            monday.setDate(now.getDate() - (dayOfWeek === 0 ? 6 : dayOfWeek - 1));
+            monday.setHours(0, 0, 0, 0);
+            
+            const sunday = new Date(monday);
+            sunday.setDate(monday.getDate() + 6);
+            
+            let weeklyCommits = 0;
+            for (const [dateStr, dayData] of Object.entries(data.daily)) {
+                const date = new Date(dateStr);
+                if (date >= monday && date <= sunday) {
+                    weeklyCommits += dayData.commits;
+                }
+            }
+            
+            const percent = Math.min(100, Math.round((weeklyCommits / weeklyGoal) * 100));
+            const daysRemaining = 7 - (dayOfWeek === 0 ? 7 : dayOfWeek);
+            
+            document.getElementById('weekly-current').textContent = `${weeklyCommits} 커밋`;
+            document.getElementById('weekly-goal-text').textContent = `목표: ${weeklyGoal} 커밋`;
+            document.getElementById('weekly-progress').style.width = percent + '%';
+            document.getElementById('weekly-percent').textContent = percent + '% 달성';
+            document.getElementById('weekly-remaining').textContent = `남은 기간: ${daysRemaining}일`;
+            
+            // Update progress bar color
+            const progressBar = document.getElementById('weekly-progress');
+            if (percent >= 100) {
+                progressBar.className = 'goal-progress bg-gradient-to-r from-yellow-400 to-yellow-600 h-4 rounded-full';
+            } else if (percent >= 70) {
+                progressBar.className = 'goal-progress bg-gradient-to-r from-green-400 to-green-600 h-4 rounded-full';
+            } else {
+                progressBar.className = 'goal-progress bg-gradient-to-r from-blue-400 to-blue-600 h-4 rounded-full';
+            }
+        }
+
+        function renderWorkTypeAnalysis() {
+            const types = {
+                'feat': { label: '기능 추가', color: '#22c55e', count: 0 },
+                'fix': { label: '버그 수정', color: '#ef4444', count: 0 },
+                'refactor': { label: '리팩토링', color: '#8b5cf6', count: 0 },
+                'docs': { label: '문서', color: '#3b82f6', count: 0 },
+                'chore': { label: '기타 작업', color: '#6b7280', count: 0 },
+                'other': { label: '기타', color: '#d1d5db', count: 0 }
+            };
+            
+            data.commits.forEach(commit => {
+                const msg = commit.message.toLowerCase();
+                if (msg.startsWith('feat')) types.feat.count++;
+                else if (msg.startsWith('fix')) types.fix.count++;
+                else if (msg.startsWith('refactor')) types.refactor.count++;
+                else if (msg.startsWith('docs')) types.docs.count++;
+                else if (msg.startsWith('chore') || msg.startsWith('test') || msg.startsWith('style') || msg.startsWith('perf') || msg.startsWith('ci') || msg.startsWith('build')) types.chore.count++;
+                else types.other.count++;
+            });
+            
+            const ctx = document.getElementById('work-type-chart').getContext('2d');
+            
+            if (workTypeChart) workTypeChart.destroy();
+            
+            workTypeChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: Object.values(types).map(t => t.label),
+                    datasets: [{
+                        data: Object.values(types).map(t => t.count),
+                        backgroundColor: Object.values(types).map(t => t.color),
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    cutout: '60%'
+                }
+            });
+            
+            // Legend
+            const legendDiv = document.getElementById('work-type-legend');
+            legendDiv.innerHTML = Object.entries(types)
+                .filter(([_, t]) => t.count > 0)
+                .map(([key, t]) => `
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 rounded" style="background: ${t.color}"></div>
+                        <span>${t.label}: ${t.count}개 (${Math.round(t.count / data.commits.length * 100)}%)</span>
+                    </div>
+                `).join('');
+        }
+
+        function renderTimeHeatmap() {
+            const hourCounts = new Array(24).fill(0);
+            
+            data.commits.forEach(commit => {
+                const hour = new Date(commit.date).getHours();
+                hourCounts[hour]++;
+            });
+            
+            const maxCount = Math.max(...hourCounts, 1);
+            const peakHour = hourCounts.indexOf(maxCount);
+            
+            document.getElementById('peak-hour').textContent = `${peakHour}시 - ${peakHour + 1}시`;
+            
+            const heatmapDiv = document.getElementById('time-heatmap');
+            heatmapDiv.innerHTML = '';
+            
+            // Create 2 rows of 12 hours each
+            for (let row = 0; row < 2; row++) {
+                for (let col = 0; col < 12; col++) {
+                    const hour = row * 12 + col;
+                    const count = hourCounts[hour];
+                    const intensity = count / maxCount;
+                    
+                    let bgColor;
+                    if (intensity === 0) bgColor = '#f3f4f6';
+                    else if (intensity < 0.25) bgColor = '#dbeafe';
+                    else if (intensity < 0.5) bgColor = '#93c5fd';
+                    else if (intensity < 0.75) bgColor = '#3b82f6';
+                    else bgColor = '#1d4ed8';
+                    
+                    const cell = document.createElement('div');
+                    cell.className = 'heatmap-cell';
+                    cell.style.backgroundColor = bgColor;
+                    cell.style.color = intensity > 0.5 ? '#fff' : '#6b7280';
+                    cell.title = `${hour}시: ${count}개 커밋`;
+                    cell.textContent = count > 0 ? count : '';
+                    heatmapDiv.appendChild(cell);
+                }
+            }
         }
 
         function renderChart() {
@@ -168,7 +559,7 @@
                 );
                 content.innerHTML = items.length ? items.map(c => `
                     <div class="commit-line flex items-start gap-4 p-4 border-b">
-                        <div class="activity-dot bg-blue-500 mt-2"></div>
+                        <div class="activity-dot ${getCommitTypeColor(c.message)} mt-2"></div>
                         <div class="flex-1 min-w-0">
                             <a href="${c.url}" target="_blank" class="text-blue-600 hover:underline font-medium truncate block">${escapeHtml(c.message)}</a>
                             <div class="text-sm text-gray-500 mt-1">
@@ -219,6 +610,16 @@
             }
         }
 
+        function getCommitTypeColor(message) {
+            const msg = message.toLowerCase();
+            if (msg.startsWith('feat')) return 'bg-green-500';
+            if (msg.startsWith('fix')) return 'bg-red-500';
+            if (msg.startsWith('refactor')) return 'bg-purple-500';
+            if (msg.startsWith('docs')) return 'bg-blue-500';
+            if (msg.startsWith('chore') || msg.startsWith('test') || msg.startsWith('style')) return 'bg-gray-500';
+            return 'bg-gray-400';
+        }
+
         function formatDate(dateStr) {
             const date = new Date(dateStr);
             const now = new Date();
@@ -233,6 +634,28 @@
             const div = document.createElement('div');
             div.textContent = text;
             return div.innerHTML;
+        }
+
+        // Goal Modal
+        function openGoalModal() {
+            document.getElementById('goal-input').value = weeklyGoal;
+            document.getElementById('goal-modal').classList.remove('hidden');
+            document.getElementById('goal-modal').classList.add('flex');
+        }
+
+        function closeGoalModal() {
+            document.getElementById('goal-modal').classList.add('hidden');
+            document.getElementById('goal-modal').classList.remove('flex');
+        }
+
+        function saveGoal() {
+            const newGoal = parseInt(document.getElementById('goal-input').value);
+            if (newGoal > 0 && newGoal <= 500) {
+                weeklyGoal = newGoal;
+                localStorage.setItem(WEEKLY_GOAL_KEY, newGoal);
+                renderWeeklyGoal();
+                closeGoalModal();
+            }
         }
 
         // Tab switching
@@ -250,6 +673,11 @@
         document.getElementById('search-input').addEventListener('input', (e) => {
             searchQuery = e.target.value;
             renderContent();
+        });
+
+        // Close modal on outside click
+        document.getElementById('goal-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'goal-modal') closeGoalModal();
         });
 
         loadData();
