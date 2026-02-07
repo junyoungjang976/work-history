@@ -1,28 +1,37 @@
 {
-  "updated_at": "2026-02-06T12:29:48.024452Z",
+  "updated_at": "2026-02-07T00:56:35.216458Z",
   "repos": [
-    "as-diagnosis-tool",
-    "kitchen-simulator",
-    "equipment-manager",
     "busungtk-asms",
-    "portal",
+    "ai-trend-intelligence",
+    "ai-ideation-lab",
     "order-tracker",
-    "sales-pipeline",
-    "hvac-mentor",
+    "field-check",
     "purchase-data",
-    "field-check"
+    "sales-pipeline",
+    "equipment-manager",
+    "hvac-mentor",
+    "portal",
+    "as-diagnosis-tool",
+    "kitchen-simulator"
   ],
   "summary": {
-    "total_commits": 198,
-    "total_prs": 0,
+    "total_commits": 225,
+    "total_prs": 2,
     "total_issues": 0,
-    "active_days": 13
+    "active_days": 14
   },
   "daily": {
-    "2026-02-06": {
-      "commits": 6,
+    "2026-02-07": {
+      "commits": 2,
       "prs_opened": 0,
       "prs_merged": 0,
+      "issues_opened": 0,
+      "issues_closed": 0
+    },
+    "2026-02-06": {
+      "commits": 31,
+      "prs_opened": 2,
+      "prs_merged": 2,
       "issues_opened": 0,
       "issues_closed": 0
     },
@@ -113,6 +122,214 @@
   },
   "commits": [
     {
+      "sha": "b489c95",
+      "message": "feat: 고객 신규등록, 브랜드 컬러 적용, 담당자 표시 수정, 시간대 보정",
+      "author": "junyoungjang976",
+      "date": "2026-02-07T00:54:44Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/b489c95586dee3d110f6636fb3cd99b7a19a5587",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "7820925",
+      "message": "feat: OpenAI → Gemini 전환 + Reddit 수집 수정",
+      "author": "junyoungjang976",
+      "date": "2026-02-07T00:39:03Z",
+      "url": "https://github.com/junyoungjang976/ai-trend-intelligence/commit/78209256183408bbc9aa25b935a6b8c72254bb3f",
+      "repo": "ai-trend-intelligence"
+    },
+    {
+      "sha": "8e32004",
+      "message": "Add maxDuration=60 to all API routes for Vercel timeout fix",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T23:34:48Z",
+      "url": "https://github.com/junyoungjang976/ai-trend-intelligence/commit/8e32004a6091e2cefaa386ea2fb6ca2eb62b04ff",
+      "repo": "ai-trend-intelligence"
+    },
+    {
+      "sha": "8b8aa50",
+      "message": "feat: Google News RSS + Reddit 수집기 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T15:52:52Z",
+      "url": "https://github.com/junyoungjang976/ai-trend-intelligence/commit/8b8aa504a25e8b53b532be7f88c7d5fc07f821d1",
+      "repo": "ai-trend-intelligence"
+    },
+    {
+      "sha": "8e9a1b1",
+      "message": "feat: anon RLS 정책 추가 (002 마이그레이션)",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T15:46:46Z",
+      "url": "https://github.com/junyoungjang976/ai-trend-intelligence/commit/8e9a1b14379c26635fed05234f257d8e5075f5eb",
+      "repo": "ai-trend-intelligence"
+    },
+    {
+      "sha": "96b1ec3",
+      "message": "feat: 사이드바 탭 네비게이션 구현 + Threads 수집기 구현",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T15:23:50Z",
+      "url": "https://github.com/junyoungjang976/ai-trend-intelligence/commit/96b1ec3c73bf2e04098f8171701185ec2493cdfe",
+      "repo": "ai-trend-intelligence"
+    },
+    {
+      "sha": "5f6dcdc",
+      "message": "fix: createServiceClient cookies 설정 수정",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T15:14:05Z",
+      "url": "https://github.com/junyoungjang976/ai-trend-intelligence/commit/5f6dcdc7a79282ce869640431435d50aa940f325",
+      "repo": "ai-trend-intelligence"
+    },
+    {
+      "sha": "2400726",
+      "message": "feat: 전체 한국어 로컬라이제이션",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T15:12:41Z",
+      "url": "https://github.com/junyoungjang976/ai-trend-intelligence/commit/24007267a0f53cd50945ccdbc58c66fc4026917d",
+      "repo": "ai-trend-intelligence"
+    },
+    {
+      "sha": "7f0aa59",
+      "message": "fix: rename next.config.ts to next.config.mjs for Next.js 14 compatibility",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T14:51:41Z",
+      "url": "https://github.com/junyoungjang976/ai-trend-intelligence/commit/7f0aa5976e3bf8be9b1ada69b7bbb9070df3d1ff",
+      "repo": "ai-trend-intelligence"
+    },
+    {
+      "sha": "c477e1a",
+      "message": "feat: initial AI Trend Intelligence implementation",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T14:50:12Z",
+      "url": "https://github.com/junyoungjang976/ai-trend-intelligence/commit/c477e1a419fab0b47b73ac9e791133647ccc0ed0",
+      "repo": "ai-trend-intelligence"
+    },
+    {
+      "sha": "17254db",
+      "message": "fix: TypeScript strict mode 타입 에러 수정",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T14:38:17Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/17254db37e7094e880471d88bc64995cd3281392",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "4aa8803",
+      "message": "feat: 테이블 컬럼 설정(표시/숨김) 및 열 폭 드래그 조정 기능",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T14:33:44Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/4aa88030ded2d8b2724139c012f85f3f5e9e2252",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "8d30573",
+      "message": "fix: 견적서/접수 연결 표시 버그 수정 (3단계 fallback)",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T14:33:32Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/8d30573242afd34d2df55457038b9d6ee2496de0",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "606f206",
+      "message": "Merge pull request #2 from junyoungjang976/codex/plan-ai-simulator-for-kitchen-layout",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T14:33:17Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/606f206fc0f60fc6198574458736859873e70319",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "722a341",
+      "message": "Add kitchen layout simulator plan",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T14:32:36Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/722a34160218cc2aff7bf909b48185a2f0c6c0ef",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "f887703",
+      "message": "Merge pull request #1 from junyoungjang976/codex/document-project-ideas-for-ai-ideation-lab",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T14:12:34Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/f88770385f8e3c115f6d344d4ab2886a40b6feec",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "68f0509",
+      "message": "Create problem.md",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T14:06:00Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/68f0509e5cda80912afc745e5fe37dfe6149d6a0",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "80e75b1",
+      "message": "Document AI trend assistant dashboard idea",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T13:59:27Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/80e75b18bedcb86996187ca7acff2bd54d819878",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "b5219fb",
+      "message": "Create tradeoffs.md",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T13:45:37Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/b5219fbb52551650e3f34a8ddc0b7a3a1eb93d89",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "5b34522",
+      "message": "Create structure.md",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T13:45:18Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/5b34522fb108e95e4a8550ca4215bfdc2adca25f",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "931f127",
+      "message": "Create problem.md",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T13:44:30Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/931f1279315c47177165eb7200f281d2cfb87690",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "b398747",
+      "message": "Create decision-principles.md",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T13:41:52Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/b39874720aedc66e569a6633bfefbbdd7854fe1d",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "fa1bd74",
+      "message": "Create README.md",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T13:39:33Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/commit/fa1bd74dddd73aed60dbe06f208ce77fb8a79b0f",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "sha": "f07f89c",
+      "message": "Update CLAUDE.md - Supabase project operating rules",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T12:29:48Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager/commit/f07f89c1a983b3bc705d21cdd71c0f6eefefd1de",
+      "repo": "equipment-manager"
+    },
+    {
+      "sha": "57a1c13",
+      "message": "Update CLAUDE.md - Supabase project operating rules",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T12:29:46Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/57a1c134b31f371aa842908e1e017cf51fe28b0c",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "35b6e24",
+      "message": "Update CLAUDE.md - Supabase project operating rules",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T12:29:45Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/35b6e247fe8c717e69d890f29770384789ef3e80",
+      "repo": "order-tracker"
+    },
+    {
       "sha": "e901bff",
       "message": "Update CLAUDE.md - Supabase project operating rules",
       "author": "junyoungjang976",
@@ -127,6 +344,14 @@
       "date": "2026-02-06T12:29:42Z",
       "url": "https://github.com/junyoungjang976/hvac-mentor/commit/bf02f2a0ae1e5de5dc1ee9b88be974605a5ae506",
       "repo": "hvac-mentor"
+    },
+    {
+      "sha": "e81df4b",
+      "message": "Update CLAUDE.md - Supabase project operating rules",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T12:29:40Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/e81df4bf4eaf41ce74804f40257af3fa0704dd02",
+      "repo": "busungtk-asms"
     },
     {
       "sha": "6135614",
@@ -1495,208 +1720,31 @@
       "date": "2026-01-28T14:33:08Z",
       "url": "https://github.com/junyoungjang976/sales-pipeline/commit/d3d4885846d6716105d10f3e9fda9c78536ea38f",
       "repo": "sales-pipeline"
-    },
-    {
-      "sha": "03fe907",
-      "message": "Add CHANGELOG.md - 작업 히스토리 정리",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T05:03:55Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/03fe9079977ae3e9a250c38fb60f8a0af2c3bb5f",
-      "repo": "equipment-manager"
-    },
-    {
-      "sha": "9a1a26e",
-      "message": "Initial commit: 장비 관리 시스템 (Equipment Manager)",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:59:59Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/9a1a26e8a25106d408261cc9765fd89dc5d06f00",
-      "repo": "equipment-manager"
-    },
-    {
-      "sha": "1b271fc",
-      "message": "Trigger deployment for reverted env vars",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:55:51Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/1b271fc6c6c606ee6130298bf16abf75f7005651",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "93b8d01",
-      "message": "Revert sync.js to original state",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:53:40Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/93b8d0176b9f53bce27bd9664562cbd54ddc7be0",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "18d1f51",
-      "message": "Add debug info to sync response",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:48:49Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/18d1f51317493727c92d4035bf4330fa51f32421",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "70a2ebe",
-      "message": "Add debug logging to sync",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:48:37Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/70a2ebede32260c553eb70626af0c364fbdcca5b",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "335b3ff",
-      "message": "Trigger deployment for clean env vars",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:45:57Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/335b3ff77706a9423e7ab01f51d67581c34c77a9",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "832658d",
-      "message": "Trigger deployment for env var update",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:44:01Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/832658d7ca7b836198f0771924b6f374c4f2dd4c",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "b932da6",
-      "message": "Fix Channel Talk API authentication method",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:42:38Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/b932da624af9c37ddee7fe1f398515adfcea0886",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "94e7024",
-      "message": "Add brand field parsing to ChannelTalk sync",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:13:38Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/94e7024b3d263f1440d903977759e55c26321576",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "6ddf6a8",
-      "message": "Add brand column with filtering and fix inline dropdown save",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T04:09:29Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/6ddf6a805ce2c48e05c21a20806ee8ed87237ec5",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "a49a411",
-      "message": "Add troubleshooting guide with issue resolution notes",
-      "author": "junyoungjang976",
-      "date": "2026-01-27T18:12:49Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/a49a4113585cf486a4f88f76702513705ef5deb8",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "803ad6c",
-      "message": "Add detailed error logging for debugging save/delete failures",
-      "author": "junyoungjang976",
-      "date": "2026-01-27T18:08:07Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/803ad6c8aa312e87ec012642f4e5932dba7bf678",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "516fe49",
-      "message": "Add edit/delete action buttons and pagination to DataTable",
-      "author": "junyoungjang976",
-      "date": "2026-01-27T17:57:56Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/516fe49938e915415c9bd6f10399a63b458a2547",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "230c391",
-      "message": "Migrate to Supabase and add 5 new features",
-      "author": "junyoungjang976",
-      "date": "2026-01-27T17:43:27Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/230c391ee025be98a7bf70c27a70158e6db4fec1",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "32fb899",
-      "message": "Fix data save failure by aligning API columns with EditModal fields",
-      "author": "junyoungjang976",
-      "date": "2026-01-27T17:06:25Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/32fb8996c62a1265136353607c9a90a9f178dc3b",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "f5a0ab3",
-      "message": "Initial commit: HVAC Mentor app",
-      "author": "junyoungjang976",
-      "date": "2026-01-26T15:18:37Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/f5a0ab3ee944bd1d5262d296c2cfc22bac05fdd9",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "9aa74db",
-      "message": "Initial commit: Field Check app",
-      "author": "junyoungjang976",
-      "date": "2026-01-26T15:17:06Z",
-      "url": "https://github.com/junyoungjang976/field-check/commit/9aa74db4ce8798dccc8e198ef2cf0428c77013cd",
-      "repo": "field-check"
-    },
-    {
-      "sha": "5df9aef",
-      "message": "Initial commit: Sales Pipeline app",
-      "author": "junyoungjang976",
-      "date": "2026-01-26T15:14:38Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/5df9aefac72ff405d20ce0b3fde82ced12a6573c",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "81b9550",
-      "message": "feat: 발주 추적 시스템 기능 확장",
-      "author": "장준영",
-      "date": "2026-01-24T03:56:21Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/81b95503b2f919822dd58795b1707dbdb5efc77f",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "b593255",
-      "message": "chore: remove .env from tracking",
-      "author": "장준영",
-      "date": "2026-01-24T03:25:32Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/b593255c60aee4081049b7c51785ec70ff864f56",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "616d4ce",
-      "message": "feat: 사용 가이드 투어 기능 추가",
-      "author": "장준영",
-      "date": "2026-01-24T03:25:28Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/616d4cef5ff32287ff73e2d6df6f6e7c01433b6b",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "62a0170",
-      "message": "feat: 발주 목록에서 모든 상태 버튼 표시",
-      "author": "장준영",
-      "date": "2026-01-24T03:05:42Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/62a0170bad6b2d85e4558f33e4143795aae13e68",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "5b7d4c3",
-      "message": "feat: 발주 목록에서 빠른 상태 변경 버튼 추가",
-      "author": "장준영",
-      "date": "2026-01-24T03:02:45Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/5b7d4c3a185d753556cafc70c6cc5d1fff08028b",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "4a30d98",
-      "message": "feat: order-tracker 초기 커밋",
-      "author": "장준영",
-      "date": "2026-01-24T02:49:06Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/4a30d9852c9721a982cfea897508ceae740bfcd4",
-      "repo": "order-tracker"
     }
   ],
-  "pull_requests": [],
+  "pull_requests": [
+    {
+      "number": 2,
+      "title": "Add kitchen layout simulator planning docs",
+      "state": "closed",
+      "author": "junyoungjang976",
+      "created_at": "2026-02-06T14:32:38Z",
+      "updated_at": "2026-02-06T14:33:18Z",
+      "merged_at": "2026-02-06T14:33:18Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/pull/2",
+      "repo": "ai-ideation-lab"
+    },
+    {
+      "number": 1,
+      "title": "Document AI trend assistant dashboard idea",
+      "state": "closed",
+      "author": "junyoungjang976",
+      "created_at": "2026-02-06T13:59:29Z",
+      "updated_at": "2026-02-06T14:12:35Z",
+      "merged_at": "2026-02-06T14:12:35Z",
+      "url": "https://github.com/junyoungjang976/ai-ideation-lab/pull/1",
+      "repo": "ai-ideation-lab"
+    }
+  ],
   "issues": []
 }
