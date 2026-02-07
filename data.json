@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-02-07T00:56:35.216458Z",
+  "updated_at": "2026-02-07T02:32:04.417238Z",
   "repos": [
+    "purchase-data",
+    "portal",
+    "kitchen-simulator",
+    "as-diagnosis-tool",
+    "hvac-mentor",
+    "equipment-manager",
+    "sales-pipeline",
+    "field-check",
+    "order-tracker",
     "busungtk-asms",
     "ai-trend-intelligence",
-    "ai-ideation-lab",
-    "order-tracker",
-    "field-check",
-    "purchase-data",
-    "sales-pipeline",
-    "equipment-manager",
-    "hvac-mentor",
-    "portal",
-    "as-diagnosis-tool",
-    "kitchen-simulator"
+    "ai-ideation-lab"
   ],
   "summary": {
-    "total_commits": 225,
+    "total_commits": 236,
     "total_prs": 2,
     "total_issues": 0,
     "active_days": 14
   },
   "daily": {
     "2026-02-07": {
-      "commits": 2,
+      "commits": 13,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -121,6 +121,94 @@
     }
   },
   "commits": [
+    {
+      "sha": "182ee33",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:29:14Z",
+      "url": "https://github.com/junyoungjang976/purchase-data/commit/182ee33cdd3fb99f1e6f548788dfe65381c2300c",
+      "repo": "purchase-data"
+    },
+    {
+      "sha": "1aea11c",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:29:10Z",
+      "url": "https://github.com/junyoungjang976/portal/commit/1aea11cc3443dea987ccbde20c4631e31cf7567d",
+      "repo": "portal"
+    },
+    {
+      "sha": "e9ebd3c",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:29:07Z",
+      "url": "https://github.com/junyoungjang976/kitchen-simulator/commit/e9ebd3c88230acb445836f403bc62c2f7fe23099",
+      "repo": "kitchen-simulator"
+    },
+    {
+      "sha": "f3da95d",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:29:04Z",
+      "url": "https://github.com/junyoungjang976/as-diagnosis-tool/commit/f3da95daa3b4840e0bbe07c4a89cb297c5171e90",
+      "repo": "as-diagnosis-tool"
+    },
+    {
+      "sha": "4d83b90",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:29:01Z",
+      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/4d83b900be01b69ceab93183f05213109cf52d46",
+      "repo": "hvac-mentor"
+    },
+    {
+      "sha": "3bc32af",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:28:58Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager/commit/3bc32af12e1670eb64d0be3dc1d887482dfb3584",
+      "repo": "equipment-manager"
+    },
+    {
+      "sha": "020811c",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:28:55Z",
+      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/020811c23ddb9d19c18e46cb63cb253011e55c40",
+      "repo": "sales-pipeline"
+    },
+    {
+      "sha": "1c90381",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:28:52Z",
+      "url": "https://github.com/junyoungjang976/field-check/commit/1c90381a9aa261e79583fef76e987170c88e2154",
+      "repo": "field-check"
+    },
+    {
+      "sha": "a5f4c42",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:28:49Z",
+      "url": "https://github.com/junyoungjang976/order-tracker/commit/a5f4c4279ba18f36d9c4e8b03b082536629a9f8c",
+      "repo": "order-tracker"
+    },
+    {
+      "sha": "2c61020",
+      "message": "docs: update CLAUDE.md with common project operating rules",
+      "author": "jangjoonyoung",
+      "date": "2026-02-07T02:28:46Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/2c610206f1902fc7463de51962797028ab44d525",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "c814ae0",
+      "message": "feat: C1~C5 전체 파이프라인 구현 (패턴 추출 + 조건부 생성 + 평가)",
+      "author": "junyoung976",
+      "date": "2026-02-07T01:18:06Z",
+      "url": "https://github.com/junyoungjang976/kitchen-simulator/commit/c814ae0e2f879aff7865e9e96fd488c0dbb70c1f",
+      "repo": "kitchen-simulator"
+    },
     {
       "sha": "b489c95",
       "message": "feat: 고객 신규등록, 브랜드 컬러 적용, 담당자 표시 수정, 시간대 보정",
@@ -370,20 +458,20 @@
       "repo": "purchase-data"
     },
     {
-      "sha": "769bba0",
-      "message": "Add CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:23Z",
-      "url": "https://github.com/junyoungjang976/as-diagnosis-tool/commit/769bba07567e2480aadcb902743f9bbd41cdc5b6",
-      "repo": "as-diagnosis-tool"
-    },
-    {
       "sha": "09260b6",
       "message": "Add CLAUDE.md - Supabase project operating rules",
       "author": "junyoungjang976",
       "date": "2026-02-06T12:29:23Z",
       "url": "https://github.com/junyoungjang976/kitchen-simulator/commit/09260b6c4da746e250f63c8977805a483bc81b99",
       "repo": "kitchen-simulator"
+    },
+    {
+      "sha": "769bba0",
+      "message": "Add CLAUDE.md - Supabase project operating rules",
+      "author": "junyoungjang976",
+      "date": "2026-02-06T12:29:23Z",
+      "url": "https://github.com/junyoungjang976/as-diagnosis-tool/commit/769bba07567e2480aadcb902743f9bbd41cdc5b6",
+      "repo": "as-diagnosis-tool"
     },
     {
       "sha": "306a488",
@@ -1632,94 +1720,6 @@
       "date": "2026-01-29T00:19:24Z",
       "url": "https://github.com/junyoungjang976/field-check/commit/26b1e09997148db1b9407bd183f0bc99cd3df29c",
       "repo": "field-check"
-    },
-    {
-      "sha": "46bfe51",
-      "message": "fix: 지역 파싱 로직 대폭 개선",
-      "author": "jangjoonyoung",
-      "date": "2026-01-28T19:24:47Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/46bfe5164718124423d8545403a711ae350395ff",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "f922700",
-      "message": "fix: reminders를 Supabase로 전환 + soft delete 적용",
-      "author": "jangjoonyoung",
-      "date": "2026-01-28T19:11:21Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/f922700f1b93a4a8f95bfe75092d634cc1401056",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "d119d45",
-      "message": "fix: 지역 파싱 로직 개선",
-      "author": "jangjoonyoung",
-      "date": "2026-01-28T18:53:56Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/d119d454003e02a33800ea170c62ff539746bdba",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "81f2236",
-      "message": "feat: 양식화된 메시지만 파싱하도록 개선",
-      "author": "jangjoonyoung",
-      "date": "2026-01-28T18:31:42Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/81f223663a7a9ba6f5d09004247cf3aebadeec3a",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "093d851",
-      "message": "fix: 채널톡 API 인증 방식 변경 (x-access-key/secret 헤더 사용)",
-      "author": "jangjoonyoung",
-      "date": "2026-01-28T18:17:46Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/093d851ac30f7bccfac3f6a24f93b0447d0d41bf",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "ad66269",
-      "message": "fix: 채널톡 팀챗 '영업_견적문의' 채널에서 데이터 가져오도록 수정",
-      "author": "jangjoonyoung",
-      "date": "2026-01-28T18:12:00Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/ad66269bbf58e1538f0baf09447ddf69cc7b4c5d",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "ec167c4",
-      "message": "chore: trigger deployment with env vars configured",
-      "author": "jangjoonyoung",
-      "date": "2026-01-28T18:06:39Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/ec167c48fbf66bbf7f4a2416e9f18a793bca8904",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "8217c21",
-      "message": "chore: trigger deployment with env vars",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T15:03:11Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/8217c21a820b29bac01cfd390b85d0a273b3933c",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "67c7d27",
-      "message": "WIP: Phase 1 개선 작업 진행 중",
-      "author": "junyoungjang976",
-      "date": "2026-01-28T14:57:31Z",
-      "url": "https://github.com/junyoungjang976/field-check/commit/67c7d274e462eb0fb88e7ba7f6b726fa4b36c183",
-      "repo": "field-check"
-    },
-    {
-      "sha": "0d9083d",
-      "message": "chore: trigger Vercel deployment",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T14:43:26Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/0d9083dd2162651afaa8ca46af9bfb6537d430d0",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "d3d4885",
-      "message": "refactor: 코드 품질 개선 및 UX 향상",
-      "author": "Junyoung Jang",
-      "date": "2026-01-28T14:33:08Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/d3d4885846d6716105d10f3e9fda9c78536ea38f",
-      "repo": "sales-pipeline"
     }
   ],
   "pull_requests": [
