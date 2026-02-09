@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-02-08T01:16:06.957100Z",
+  "updated_at": "2026-02-09T01:02:53.024121Z",
   "repos": [
+    "busungtk-asms",
     "kitchen-simulator",
     "equipment-manager",
-    "busungtk-asms",
     "ai-trend-intelligence",
     "purchase-data",
     "portal",
@@ -15,12 +15,19 @@
     "ai-ideation-lab"
   ],
   "summary": {
-    "total_commits": 280,
+    "total_commits": 281,
     "total_prs": 2,
     "total_issues": 0,
-    "active_days": 14
+    "active_days": 15
   },
   "daily": {
+    "2026-02-08": {
+      "commits": 1,
+      "prs_opened": 0,
+      "prs_merged": 0,
+      "issues_opened": 0,
+      "issues_closed": 0
+    },
     "2026-02-07": {
       "commits": 57,
       "prs_opened": 0,
@@ -121,6 +128,14 @@
     }
   },
   "commits": [
+    {
+      "sha": "e0cc5be",
+      "message": "feat: 거래명세표(Transaction Statement) 기능 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-02-08T15:35:57Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/e0cc5be3da57cc4725e8f54d42f5f8f5cd932b5e",
+      "repo": "busungtk-asms"
+    },
     {
       "sha": "f0780e9",
       "message": "feat: 주방장 동선 기반 배치 알고리즘 + 3D/2D 시각화",
@@ -1711,14 +1726,6 @@
       "author": "장준영",
       "date": "2026-01-29T18:15:49Z",
       "url": "https://github.com/junyoungjang976/order-tracker/commit/707e4e8cd3059d514f54de6270d496517a8c815d",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "3ad9ba9",
-      "message": "feat: v3.0 - 알림 시스템 개선 및 UI 업데이트",
-      "author": "장준영",
-      "date": "2026-01-29T18:13:57Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/3ad9ba9badf6c0d65d1800db044019a93d19c11e",
       "repo": "order-tracker"
     }
   ],
