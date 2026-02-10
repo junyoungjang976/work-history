@@ -1,12 +1,14 @@
 {
-  "updated_at": "2026-02-09T01:02:53.024121Z",
+  "updated_at": "2026-02-10T01:10:58.158916Z",
   "repos": [
+    "equipment-manager-v3",
+    "portal",
+    "busungtk-landing",
+    "daily-report",
     "busungtk-asms",
     "kitchen-simulator",
-    "equipment-manager",
     "ai-trend-intelligence",
     "purchase-data",
-    "portal",
     "as-diagnosis-tool",
     "hvac-mentor",
     "sales-pipeline",
@@ -15,12 +17,19 @@
     "ai-ideation-lab"
   ],
   "summary": {
-    "total_commits": 281,
+    "total_commits": 308,
     "total_prs": 2,
     "total_issues": 0,
-    "active_days": 15
+    "active_days": 16
   },
   "daily": {
+    "2026-02-09": {
+      "commits": 37,
+      "prs_opened": 0,
+      "prs_merged": 0,
+      "issues_opened": 0,
+      "issues_closed": 0
+    },
     "2026-02-08": {
       "commits": 1,
       "prs_opened": 0,
@@ -29,28 +38,28 @@
       "issues_closed": 0
     },
     "2026-02-07": {
-      "commits": 57,
+      "commits": 54,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
       "issues_closed": 0
     },
     "2026-02-06": {
-      "commits": 31,
+      "commits": 30,
       "prs_opened": 2,
       "prs_merged": 2,
       "issues_opened": 0,
       "issues_closed": 0
     },
     "2026-02-05": {
-      "commits": 3,
+      "commits": 1,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
       "issues_closed": 0
     },
     "2026-02-04": {
-      "commits": 38,
+      "commits": 37,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -71,7 +80,7 @@
       "issues_closed": 0
     },
     "2026-02-01": {
-      "commits": 8,
+      "commits": 7,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -99,7 +108,7 @@
       "issues_closed": 0
     },
     "2026-01-28": {
-      "commits": 22,
+      "commits": 20,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -129,6 +138,302 @@
   },
   "commits": [
     {
+      "sha": "5a159e7",
+      "message": "feat: 오설록 브랜드 디자인 시스템 전면 개편",
+      "author": "jangjoonyoung",
+      "date": "2026-02-09T20:41:32Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager-v3/commit/5a159e7aa245c247073d89424e850c75afa403ec",
+      "repo": "equipment-manager-v3"
+    },
+    {
+      "sha": "6d6315a",
+      "message": "fix: 첨부파일 업로드 시 한글 파일명으로 인한 Storage 에러 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-02-09T18:49:31Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager-v3/commit/6d6315a47be2a255dfc76173cf022f5d41ec1b9f",
+      "repo": "equipment-manager-v3"
+    },
+    {
+      "sha": "f7bd464",
+      "message": "fix: Equipment Manager 링크를 v3로 변경",
+      "author": "jangjoonyoung",
+      "date": "2026-02-09T18:46:29Z",
+      "url": "https://github.com/junyoungjang976/portal/commit/f7bd464b1a07fceaa39db599e0284e95ccad2a31",
+      "repo": "portal"
+    },
+    {
+      "sha": "2c495a2",
+      "message": "feat: A/S 첨부파일 기능 추가 및 포털 모바일 최적화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-09T18:39:10Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager-v3/commit/2c495a28ce31975b393415bff175667b4fd2efd6",
+      "repo": "equipment-manager-v3"
+    },
+    {
+      "sha": "94e7399",
+      "message": "feat: 오설록 포털 테마를 제품 패키지 디자인 톤으로 변경",
+      "author": "jangjoonyoung",
+      "date": "2026-02-09T18:18:42Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager-v3/commit/94e7399a50ac09dca086ec62b0580c01c18e606a",
+      "repo": "equipment-manager-v3"
+    },
+    {
+      "sha": "3c74552",
+      "message": "fix: 구 API 참조 빌드 에러 수정",
+      "author": "jangjoonyoung",
+      "date": "2026-02-09T17:48:48Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager-v3/commit/3c74552c186cd0a64fa28939d7e59c96b745cac4",
+      "repo": "equipment-manager-v3"
+    },
+    {
+      "sha": "6a0fe0f",
+      "message": "feat: equipment-manager-v3 초기 커밋 (오설록 디자인 톤 포털)",
+      "author": "jangjoonyoung",
+      "date": "2026-02-09T17:47:00Z",
+      "url": "https://github.com/junyoungjang976/equipment-manager-v3/commit/6a0fe0feff4ba61fb5aed35a83b54142d690b139",
+      "repo": "equipment-manager-v3"
+    },
+    {
+      "sha": "91be0af",
+      "message": "feat: 랜딩페이지 디자인 10종 + 전환최적화 10종 추가",
+      "author": "jangjoonyoung",
+      "date": "2026-02-09T17:36:17Z",
+      "url": "https://github.com/junyoungjang976/busungtk-landing/commit/91be0af9a2f5eec80d4a432f8ce39eaefc4320eb",
+      "repo": "busungtk-landing"
+    },
+    {
+      "sha": "e3571ef",
+      "message": "feat: 일일업무보고 툴 V1 구현",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T10:37:27Z",
+      "url": "https://github.com/junyoungjang976/daily-report/commit/e3571efcb3f7d5b5d7eca6b1b0f4cd84d72567da",
+      "repo": "daily-report"
+    },
+    {
+      "sha": "9ee9558",
+      "message": "feat: 상태 되돌리기 시 연동 데이터 삭제 확인 + 견적서/접수 연결 표시 개선",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T10:29:18Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/9ee9558516fc24301ba9a073fb6908a5b7c76248",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "1c6e874",
+      "message": "style: 서브페이지 5종 폰트 크기 증가 및 모바일 최적화",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T10:00:43Z",
+      "url": "https://github.com/junyoungjang976/busungtk-landing/commit/1c6e874b94b07cc17b7ef6052dad1022f0551c7c",
+      "repo": "busungtk-landing"
+    },
+    {
+      "sha": "07f2cc1",
+      "message": "feat: 아임웹용 B2B 랜딩페이지 6종",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T09:49:55Z",
+      "url": "https://github.com/junyoungjang976/busungtk-landing/commit/07f2cc14869f13cab68de9abf5dd6820b33f73cc",
+      "repo": "busungtk-landing"
+    },
+    {
+      "sha": "ad50734",
+      "message": "Initial commit from Create Next App",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T08:43:18Z",
+      "url": "https://github.com/junyoungjang976/daily-report/commit/ad5073472a9564090e59aaef72341a93b0d0a5eb",
+      "repo": "daily-report"
+    },
+    {
+      "sha": "e130fa3",
+      "message": "fix: 예전자료 제외 시 2월부터 표시 (1월 이전 제외)",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T06:50:30Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/e130fa3730e16667fbc9079761f594fad001d950",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "da3acb1",
+      "message": "fix: 예전자료 제외 기준일 2월 1일로 변경",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T06:45:47Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/da3acb1478e41e0da514ce7c4f3e01c2bd6ea1cf",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "f2903a9",
+      "message": "fix: 예전자료 제외 기준일 수정 (2/7 포함 이전 자료 제외)",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T06:43:19Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/f2903a90d040add451f5efc112b9b339da1bd373",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "ac2998a",
+      "message": "feat: 견적서 필터 및 작성일 편집 기능 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T06:33:53Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/ac2998a4707f8ab0476e2871f3d269cd77e6b0cc",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "4fa809f",
+      "message": "fix: 견적서 필터 개선",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T06:19:26Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/4fa809f9d85922d383f6cdf4961f75698835c10d",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "2af8bb7",
+      "message": "feat: 보류(on_hold) 상태 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T06:14:16Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/2af8bb79c69b88a1553348cadfd91157cdb25c82",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "c09ec9a",
+      "message": "feat: 입금완료 시 거래명세표 자동 생성",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T06:09:27Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/c09ec9abb8f88743191a5e6d1a39f18c20ab227e",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "edb1fe1",
+      "message": "fix: 견적서 모든 필터 버튼/입력 오류 수정",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T05:55:19Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/edb1fe10b9012ac5633c24135db5456a2abb77e1",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "c288947",
+      "message": "fix: 견적서 필터 버튼 작동 오류 수정",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T05:43:21Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/c288947fec0f238177cb1d1da7a9e0ffd3bf9c3f",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "7129bd0",
+      "message": "feat: A/S 접수 없이도 견적서 상태 변경 가능",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T05:36:59Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/7129bd037dddd3fd1d28ab35804dda502b1fceea",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "d87939f",
+      "message": "fix: 견적서 복사 시 A/S 접수 연결 안내 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T05:32:11Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/d87939ff6c3d26e301618ddbe00f3d052f87cc18",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "691a9af",
+      "message": "fix: 견적서 목록 필터 상태를 URL 파라미터로 유지",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T05:31:05Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/691a9af4bb348172cd2d2ff4c3938ad650f6b352",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "26b15be",
+      "message": "feat: 거래명세표 목록에 견적서 진행상태 표시",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T05:27:00Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/26b15be7555f792f7d41bddab94d0506bd82a261",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "2a5edf6",
+      "message": "feat: 견적서 복사하여 새로 만들기 기능 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T05:22:50Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/2a5edf6dbea2aa7e1503bfe4d2578b39f0a99e7f",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "e625167",
+      "message": "feat: 모바일 상태 변경 버튼 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T03:00:14Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/e625167f2ce4ff24e5d6dfb4a202201c1d3b04e5",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "c9baefd",
+      "message": "feat: 미배정 필터 추가 및 거래명세표 디자인 통일",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T02:57:04Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/c9baefd164aab308d038741468f3284251af975c",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "94bbd81",
+      "message": "fix: A/S 접수 연결 해제 버튼 동작 수정",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T02:47:35Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/94bbd8156f4f2b04eeab7cfac767b3505c5dcbda",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "7f7533f",
+      "message": "feat: 채널톡 동기화 시 필수 양식 필드 검증 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T02:42:10Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/7f7533f2e4db2bc876b98ea6fa5530e70b1edc92",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "f61eb2e",
+      "message": "fix: 2026년 이전 임포트 데이터를 통계 및 세금계산서 연동에서 제외",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T02:22:11Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/f61eb2eb7ea67aacdb85e27da579fe2234f5f9cc",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "5563108",
+      "message": "feat: 담당자 버튼형 필터 추가 (견적서/A/S 목록)",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T02:14:34Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/55631088631fe45233711368af6f24004b135f61",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "b329b47",
+      "message": "feat: 견적서 결제 조건 드롭다운 및 거래명세표 PDF 개선",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T01:58:20Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/b329b47d0c17f032b4073da4a73e35f6eb54941a",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "11d9bd8",
+      "message": "feat: 통계 페이지 개선 및 거래명세표 버튼 스타일 변경",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T01:36:50Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/11d9bd87820dc8daddc897c245e152af6aa78ea0",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "ba7187c",
+      "message": "fix: 거래명세표 비고에 견적서 비고 그대로 복사",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T01:32:55Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/ba7187c7b55c94294c3daebc34b536a88c8270f6",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "a2c92da",
+      "message": "fix: 임포트된 견적서에 share_token 자동 생성",
+      "author": "junyoungjang976",
+      "date": "2026-02-09T01:28:19Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/a2c92daf1c5ed5794802aa5c05bde8c688dd61b1",
+      "repo": "busungtk-asms"
+    },
+    {
       "sha": "e0cc5be",
       "message": "feat: 거래명세표(Transaction Statement) 기능 추가",
       "author": "jangjoonyoung",
@@ -143,14 +448,6 @@
       "date": "2026-02-07T15:43:20Z",
       "url": "https://github.com/junyoungjang976/kitchen-simulator/commit/f0780e9f750c989c85903a2e0faa1293e503b5b9",
       "repo": "kitchen-simulator"
-    },
-    {
-      "sha": "737245e",
-      "message": "feat: 고객 포털 구현 (재무/장비/정비/A/S/컴플라이언스/교육)",
-      "author": "jangjoonyoung",
-      "date": "2026-02-07T15:42:38Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/737245e1d7389c6c7636231e4487cd828c5ac138",
-      "repo": "equipment-manager"
     },
     {
       "sha": "64d82d8",
@@ -345,14 +642,6 @@
       "repo": "busungtk-asms"
     },
     {
-      "sha": "e2fd5f6",
-      "message": "docs: CLAUDE.md 회사 정보 상세화 (주방설비 전문 기업)",
-      "author": "jangjoonyoung",
-      "date": "2026-02-07T12:32:14Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/e2fd5f6e64cf0f274791afd030efdbc6dbef1699",
-      "repo": "equipment-manager"
-    },
-    {
       "sha": "feac1db",
       "message": "feat: CAD DB 기반 장비 카탈로그 재구축 (22종→37종)",
       "author": "jangjoonyoung",
@@ -527,14 +816,6 @@
       "date": "2026-02-07T02:29:01Z",
       "url": "https://github.com/junyoungjang976/hvac-mentor/commit/4d83b900be01b69ceab93183f05213109cf52d46",
       "repo": "hvac-mentor"
-    },
-    {
-      "sha": "3bc32af",
-      "message": "docs: update CLAUDE.md with common project operating rules",
-      "author": "jangjoonyoung",
-      "date": "2026-02-07T02:28:58Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/3bc32af12e1670eb64d0be3dc1d887482dfb3584",
-      "repo": "equipment-manager"
     },
     {
       "sha": "020811c",
@@ -761,14 +1042,6 @@
       "repo": "ai-ideation-lab"
     },
     {
-      "sha": "f07f89c",
-      "message": "Update CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:48Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/f07f89c1a983b3bc705d21cdd71c0f6eefefd1de",
-      "repo": "equipment-manager"
-    },
-    {
       "sha": "57a1c13",
       "message": "Update CLAUDE.md - Supabase project operating rules",
       "author": "junyoungjang976",
@@ -841,36 +1114,12 @@
       "repo": "as-diagnosis-tool"
     },
     {
-      "sha": "306a488",
-      "message": "feat: CAD 스타일 도면 생성 - 건축 도면 형식의 주방 설비 배치도",
-      "author": "junyoungjang976",
-      "date": "2026-02-05T07:53:26Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/306a4883c8533938f6e0c40ff92c79da6750aedf",
-      "repo": "equipment-manager"
-    },
-    {
-      "sha": "453a07e",
-      "message": "feat: 업종별 10개 매장 데모 데이터 및 도면 시스템 구축",
-      "author": "junyoungjang976",
-      "date": "2026-02-05T05:10:31Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/453a07e1381f025245658a04367ff968e798aac5",
-      "repo": "equipment-manager"
-    },
-    {
       "sha": "d39a7cc",
       "message": "fix: 견적서 삭제 시 연결된 A/S 접수 차단 로직 제거",
       "author": "junyoungjang976",
       "date": "2026-02-05T00:36:52Z",
       "url": "https://github.com/junyoungjang976/busungtk-asms/commit/d39a7cc90e6829294585e194b4b004f99dc9b1ec",
       "repo": "busungtk-asms"
-    },
-    {
-      "sha": "6a89284",
-      "message": "feat: 재무/자산 관리 기능 추가",
-      "author": "junyoungjang976",
-      "date": "2026-02-04T14:46:22Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/6a89284224b0198aa42dfc10164d3d7a679b6a13",
-      "repo": "equipment-manager"
     },
     {
       "sha": "c4ed22a",
@@ -1401,14 +1650,6 @@
       "repo": "field-check"
     },
     {
-      "sha": "43cba23",
-      "message": "Add market research document for multi-location F&B",
-      "author": "jangjoonyoung",
-      "date": "2026-02-01T22:31:51Z",
-      "url": "https://github.com/junyoungjang976/equipment-manager/commit/43cba23f79af0b1f9f19ccad7c74d61cb9c1dffc",
-      "repo": "equipment-manager"
-    },
-    {
       "sha": "1a30fd8",
       "message": "chore: add migration for 'both' electrical and 'cafeteria' industry enum values",
       "author": "jangjoonyoung",
@@ -1495,238 +1736,6 @@
       "date": "2026-01-31T16:57:41Z",
       "url": "https://github.com/junyoungjang976/sales-pipeline/commit/3313fa4ea2755bb8f8f1cf2057cfa109eb15d7aa",
       "repo": "sales-pipeline"
-    },
-    {
-      "sha": "f15db18",
-      "message": "feat: 오류 신고 기능 추가",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T16:57:13Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/f15db18c735097050aa617184c73f8bc23dccf42",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "ce7a437",
-      "message": "feat: Field Check 대규모 기능 개선",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T14:06:54Z",
-      "url": "https://github.com/junyoungjang976/field-check/commit/ce7a4378446624fa61394cde8f9684621401bcfe",
-      "repo": "field-check"
-    },
-    {
-      "sha": "f667756",
-      "message": "feat: 태블릿 모드에 냉동 기술 퀴즈 탭 추가",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T14:04:26Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/f6677569e133aac4589a961285094d3ec5f30c7b",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "4d541f9",
-      "message": "feat: 이메일 템플릿 추가 및 접수번호 형식 변경",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T14:02:04Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/4d541f9469d8a76a925204bdd0eebae4cb22889f",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "6d747c6",
-      "message": "feat: 스마트폰 참조 탭에 냉동 기술 랜덤 퀴즈 추가",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T14:00:47Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/6d747c688297cb3b0594bbfb661c49b40200ef32",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "2582214",
-      "message": "feat: 퀴즈 랜덤 출제 기능 추가",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T13:50:49Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/2582214541e5be7cc572c015cf1be860dbfe4eef",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "71064be",
-      "message": "feat: 스마트폰 회로 가이드에 퀴즈 기능 추가",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T13:45:58Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/71064be4e1221376c30e1c7b272f64d6f28f5830",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "4428e54",
-      "message": "feat: 스마트폰 모드에 전기 회로 가이드 탭 추가",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T13:42:08Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/4428e54752f2554cc05d61f9af6dcadcfc60193c",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "152b83f",
-      "message": "feat: 초보 기술자를 위한 전기 회로 가이드 전면 개편",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T13:35:44Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/152b83fe7fdb02ee17424abdc64b03200dbc5d13",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "17b6928",
-      "message": "feat: Sales Pipeline 대규모 개선 (Phase 1-4)",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T13:25:38Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/17b69281a9cad928354dae0c63f97c5830dbfa2a",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "5f23317",
-      "message": "feat: 모바일 최적화 - 스마트폰/태블릿 별도 레이아웃",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T13:18:30Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/5f2331728828be1ef3e843cbb285abab38431c89",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "7803d14",
-      "message": "fix: html2canvas oklch 색상 파싱 에러 수정",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T12:56:00Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/7803d14ba4975579c83018714690182226e1f50f",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "4b2b452",
-      "message": "fix: 소분류 마력 정보 추가 및 데스크톱 이미지 저장 수정",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T12:47:23Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/4b2b45262de30088eebf2c4c4ac40b16eac4013d",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "213aeb3",
-      "message": "docs: 프로젝트 작업 내역 문서 추가",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T12:47:16Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/213aeb34062da29539a12e6097f90206168bb8ef",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "087dd3d",
-      "message": "refactor: 고객 보고서 선택형 구조로 개선",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T12:22:54Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/087dd3da96d2204d9469c101da7f30ebaffea821",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "263aa70",
-      "message": "feat: 고객 보고서 기능 구현",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T12:02:42Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/263aa70acec0e3a5179255e64c8933e56dd8c6a4",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "7f9ae1a",
-      "message": "fix: 모바일 가로 스크롤 문제 수정",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T12:00:20Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/7f9ae1a95a1000a9b6a31529641840dcdd86c95f",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "ff83688",
-      "message": "fix: 발주 관리 상태 탭 모바일 가로 스크롤 개선",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T11:50:42Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/ff83688da24f1b8555082451f703d2e5d8e3aba8",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "f36d593",
-      "message": "feat: 전기 회로 탭 구현 및 HVAC 기술 데이터 확장",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T11:44:44Z",
-      "url": "https://github.com/junyoungjang976/hvac-mentor/commit/f36d59324b89fb231cc2bb9c281263355ce4e6fb",
-      "repo": "hvac-mentor"
-    },
-    {
-      "sha": "2f4495a",
-      "message": "fix: 모바일 헤더 로고 겹침 문제 수정",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T11:44:23Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/2f4495ad031d57e4e7552dfdc64aa9b52c0f8005",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "6792f40",
-      "message": "feat: 전체 페이지 모바일 최적화",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T11:38:24Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/6792f40dd688cad50c25b109988a97d3435c60a6",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "7f00c61",
-      "message": "docs: Add CLAUDE.md for project documentation",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T11:03:11Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/7f00c6187ecd439ea562d24eaea53a88542a35a2",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "ef13fbb",
-      "message": "docs: Add CLAUDE.md for project documentation",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T11:03:06Z",
-      "url": "https://github.com/junyoungjang976/portal/commit/ef13fbbdc8ced16679bf54a4838e13218cf58ca1",
-      "repo": "portal"
-    },
-    {
-      "sha": "41e51e0",
-      "message": "fix: 접수번호를 데이터 고유 번호(rowIndex)로 변경",
-      "author": "junyoungjang976",
-      "date": "2026-01-30T03:54:30Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/41e51e0c5bb69301ad409da58c44ebfbd16db5bb",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "7cb4074",
-      "message": "fix: 칸반 카드 회사명 미상/미입력 시 문의내용 요약 표시",
-      "author": "junyoungjang976",
-      "date": "2026-01-30T03:51:37Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/7cb4074889cde41403b11f0c315845bd5db01b95",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "ca34ae5",
-      "message": "feat: 테이블/모달 UI 개선 및 칸반 드래그앤드롭 활성화",
-      "author": "junyoungjang976",
-      "date": "2026-01-30T03:48:58Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/ca34ae520ff61314fdcec30534fef463727ea680",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "0e00921",
-      "message": "fix: 모달 바깥 영역 클릭시 닫히지 않도록 수정",
-      "author": "장준영",
-      "date": "2026-01-29T20:33:11Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/0e00921ed022d26f5438e95130d46011ce0d0ff7",
-      "repo": "order-tracker"
-    },
-    {
-      "sha": "3fde70a",
-      "message": "fix: 프록시 URL을 프로덕션 alias로 변경",
-      "author": "junyoungjang976",
-      "date": "2026-01-29T18:24:44Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/3fde70aae73f4fbc90b0092d4b19e67d665cce17",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "707e4e8",
-      "message": "fix: useNotificationSettings 타입 에러 수정",
-      "author": "장준영",
-      "date": "2026-01-29T18:15:49Z",
-      "url": "https://github.com/junyoungjang976/order-tracker/commit/707e4e8cd3059d514f54de6270d496517a8c815d",
-      "repo": "order-tracker"
     }
   ],
   "pull_requests": [
