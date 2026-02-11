@@ -1,11 +1,12 @@
 {
-  "updated_at": "2026-02-10T01:10:58.158916Z",
+  "updated_at": "2026-02-11T00:38:20.488269Z",
   "repos": [
+    "busungtk-asms",
+    "kitchen-planner",
     "equipment-manager-v3",
     "portal",
     "busungtk-landing",
     "daily-report",
-    "busungtk-asms",
     "kitchen-simulator",
     "ai-trend-intelligence",
     "purchase-data",
@@ -17,12 +18,19 @@
     "ai-ideation-lab"
   ],
   "summary": {
-    "total_commits": 308,
+    "total_commits": 313,
     "total_prs": 2,
     "total_issues": 0,
-    "active_days": 16
+    "active_days": 17
   },
   "daily": {
+    "2026-02-10": {
+      "commits": 11,
+      "prs_opened": 0,
+      "prs_merged": 0,
+      "issues_opened": 0,
+      "issues_closed": 0
+    },
     "2026-02-09": {
       "commits": 37,
       "prs_opened": 0,
@@ -66,14 +74,14 @@
       "issues_closed": 0
     },
     "2026-02-03": {
-      "commits": 17,
+      "commits": 15,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
       "issues_closed": 0
     },
     "2026-02-02": {
-      "commits": 12,
+      "commits": 8,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -137,6 +145,94 @@
     }
   },
   "commits": [
+    {
+      "sha": "ab4fc54",
+      "message": "fix: 거래명세표 통계 타임존 버그 수정",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T09:03:34Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/ab4fc54b1bdc13cd41395678f0a4c98355b7dca0",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "222ff9e",
+      "message": "feat: 작업자 카드에 마진금액 표시 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T08:49:40Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/222ff9eefad9c75111aaef3538d565fc9827771e",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "7ff4805",
+      "message": "fix: 연동 데이터 날짜를 견적서 작성일 기준으로 변경",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T05:14:49Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/7ff48050556237c867289e5449540f316682bfc6",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "1e1498c",
+      "message": "feat: 인라인 상태 변경 시 세금계산서/거래명세표 자동 생성 + 수량 소수점 허용",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T04:48:11Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/1e1498cde6477c2c34cdc49763a2aa4cf91a57dd",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "97947ec",
+      "message": "fix: ExecutiveReport 빌드 에러 수정 (미사용 import, 타입)",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T04:34:03Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/97947ec8e03ebdf6f334efa6c2723bc3faf0bf57",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "490bcc5",
+      "message": "feat: 통계 보고서 생성 + 엑셀 임포트 공백헤더/sparse array 수정",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T04:31:49Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/490bcc531b138a55257290bbed40b3793a767124",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "d2bc89e",
+      "message": "fix: 세금계산서 QT 필터링 + 엑셀 임포트 스마트 컬럼 감지",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T04:10:47Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/d2bc89ef231f5e5ab8fba0ad54b68d3a28d09424",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "1daaa37",
+      "message": "fix: QuoteForm quote_type 타입 에러 수정",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T03:58:42Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/1daaa37fb8ded2fb358082f1e323c3da3f598159",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "e2d0ce3",
+      "message": "feat: 견적서 엑셀 임포트 기능 추가",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T03:51:00Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/e2d0ce3c97cb0a508b65ea37930aa4ddce6edb61",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "108eac9",
+      "message": "fix: 통계 페이지 데이터 수집 로직 전면 개선",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T03:11:45Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/108eac9c6052d2c8d8180f4df2877450abd0671f",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "1de15f0",
+      "message": "feat: 주방 설계 도구 v1 초기 구현",
+      "author": "junyoungjang976",
+      "date": "2026-02-10T02:56:02Z",
+      "url": "https://github.com/junyoungjang976/kitchen-planner/commit/1de15f0e7bfd352eac6cce4c22e6686b68c86690",
+      "repo": "kitchen-planner"
+    },
     {
       "sha": "5a159e7",
       "message": "feat: 오설록 브랜드 디자인 시스템 전면 개편",
@@ -1538,54 +1634,6 @@
       "repo": "busungtk-asms"
     },
     {
-      "sha": "3260a16",
-      "message": "feat: 견적서 개선 및 워크플로우 추적 기능 추가",
-      "author": "junyoungjang976",
-      "date": "2026-02-03T03:51:01Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/3260a161c13249a362da3ef5c0f3d13bad5dcb11",
-      "repo": "busungtk-asms"
-    },
-    {
-      "sha": "ff02b81",
-      "message": "feat: 로컬 프로젝트 파일 추가",
-      "author": "junyoungjang976",
-      "date": "2026-02-03T02:37:58Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/ff02b81cd5a1d97bca5df7a5b8e4899865898b0d",
-      "repo": "busungtk-asms"
-    },
-    {
-      "sha": "6f10993",
-      "message": "fix: TypeScript 빌드 에러 수정",
-      "author": "jangjoonyoung",
-      "date": "2026-02-02T17:39:56Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/6f1099353a3ba2167a2655bdec3d9a3d3ba88f1d",
-      "repo": "busungtk-asms"
-    },
-    {
-      "sha": "043db24",
-      "message": "feat: 견적서/A/S접수 상태관리 개선",
-      "author": "jangjoonyoung",
-      "date": "2026-02-02T17:37:11Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/043db24e3dede3441a2d5c7a587512ba0ec483a8",
-      "repo": "busungtk-asms"
-    },
-    {
-      "sha": "242ca7b",
-      "message": "feat: 견적서-A/S접수 연동 기능 개선",
-      "author": "jangjoonyoung",
-      "date": "2026-02-02T17:33:15Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/242ca7bdba83b03bfb302d31e6ed59ce7ff57981",
-      "repo": "busungtk-asms"
-    },
-    {
-      "sha": "ca5d0c3",
-      "message": "feat: ASMS - A/S 관리 시스템 초기 구현",
-      "author": "junyoungjang976",
-      "date": "2026-02-02T14:08:37Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/ca5d0c34afd1d7c8c86ba4a26dff3d4f02a03b1a",
-      "repo": "busungtk-asms"
-    },
-    {
       "sha": "b84e446",
       "message": "fix: 보고서 다운로드를 텍스트 파일로 변경",
       "author": "junyoungjang976",
@@ -1696,46 +1744,6 @@
       "date": "2026-02-01T16:53:48Z",
       "url": "https://github.com/junyoungjang976/field-check/commit/103663e71293e1b73bbd7b03b3901514eed7b07f",
       "repo": "field-check"
-    },
-    {
-      "sha": "e9fa3cd",
-      "message": "Initial commit: Kitchen layout simulator",
-      "author": "jangjoonyoung",
-      "date": "2026-02-01T16:40:54Z",
-      "url": "https://github.com/junyoungjang976/kitchen-simulator/commit/e9fa3cd313ab409169c5e06a1ca07636debe0794",
-      "repo": "kitchen-simulator"
-    },
-    {
-      "sha": "afb0554",
-      "message": "feat: 점검 비교, 후속 조치, 이메일 발송 기능 추가",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T20:35:31Z",
-      "url": "https://github.com/junyoungjang976/field-check/commit/afb0554c2bc7b13bb749c4f6c128c1c2d23f29f6",
-      "repo": "field-check"
-    },
-    {
-      "sha": "dd4fa2c",
-      "message": "refactor: 액션 현황 탭 불필요한 섹션 삭제",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T19:05:04Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/dd4fa2cb76dc037a0cedd904b9885082c4746d68",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "d89c24c",
-      "message": "feat: 대규모 UI/UX 리뉴얼 및 데이터 정확성 개선",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T18:49:43Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/d89c24cf4e2fb27ab8c74075c6bc9d3a830eae59",
-      "repo": "sales-pipeline"
-    },
-    {
-      "sha": "3313fa4",
-      "message": "feat: 사이드바 하단에 포털 링크 추가",
-      "author": "jangjoonyoung",
-      "date": "2026-01-31T16:57:41Z",
-      "url": "https://github.com/junyoungjang976/sales-pipeline/commit/3313fa4ea2755bb8f8f1cf2057cfa109eb15d7aa",
-      "repo": "sales-pipeline"
     }
   ],
   "pull_requests": [
