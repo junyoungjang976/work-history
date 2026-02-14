@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-14T02:15:14.008540Z",
+  "updated_at": "2026-02-14T02:29:01.750020Z",
   "repos": [
     "busungtk-sales-pipeline",
     "busungtk-sales-crm",
@@ -12,23 +12,23 @@
     "busungtk-kitchen-planner",
     "busungtk-hvac-mentor",
     "busungtk-hub",
-    "busungtk-field-check",
     "busungtk-equipment",
-    "busungtk-daily-report",
     "busungtk-asms",
+    "busungtk-field-check",
+    "busungtk-ai-ideation",
+    "busungtk-daily-report",
     "busungtk-as-diagnosis",
-    "busungtk-ai-trends",
-    "busungtk-ai-ideation"
+    "busungtk-ai-trends"
   ],
   "summary": {
-    "total_commits": 342,
+    "total_commits": 364,
     "total_prs": 2,
     "total_issues": 0,
     "active_days": 21
   },
   "daily": {
     "2026-02-14": {
-      "commits": 18,
+      "commits": 42,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -98,7 +98,7 @@
       "issues_closed": 0
     },
     "2026-02-04": {
-      "commits": 16,
+      "commits": 14,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -176,6 +176,198 @@
     }
   },
   "commits": [
+    {
+      "sha": "e61016b",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:45Z",
+      "url": "https://github.com/junyoungjang976/busungtk-sales-pipeline/commit/e61016b3d4c59f7dff1e1c70b4480d0ed88fa6d2",
+      "repo": "busungtk-sales-pipeline"
+    },
+    {
+      "sha": "70ecde8",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:44Z",
+      "url": "https://github.com/junyoungjang976/busungtk-sales-crm/commit/70ecde8735136ca1a9fffe6a59afc4521d3110ec",
+      "repo": "busungtk-sales-crm"
+    },
+    {
+      "sha": "b32a12e",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:44Z",
+      "url": "https://github.com/junyoungjang976/busungtk-purchase-data/commit/b32a12ed498fb44123f54dec4ffbabb3422c2269",
+      "repo": "busungtk-purchase-data"
+    },
+    {
+      "sha": "5b03807",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:44Z",
+      "url": "https://github.com/junyoungjang976/busungtk-portal/commit/5b038070f98ce299a039536a392af101ab10a60f",
+      "repo": "busungtk-portal"
+    },
+    {
+      "sha": "cfe31fc",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:43Z",
+      "url": "https://github.com/junyoungjang976/busungtk-order-tracker/commit/cfe31fc87edc73e21ed7382fcac1c26b732d24aa",
+      "repo": "busungtk-order-tracker"
+    },
+    {
+      "sha": "5e3fb07",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:43Z",
+      "url": "https://github.com/junyoungjang976/busungtk-marketing/commit/5e3fb0772c8bb0335341d780e15145d79729d781",
+      "repo": "busungtk-marketing"
+    },
+    {
+      "sha": "38110ed",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:43Z",
+      "url": "https://github.com/junyoungjang976/busungtk-landing/commit/38110ed765b7e96fc8d8073b4938065a48eea55a",
+      "repo": "busungtk-landing"
+    },
+    {
+      "sha": "90770ae",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:43Z",
+      "url": "https://github.com/junyoungjang976/busungtk-kitchen-simulator/commit/90770ae77cf4b0a2cc811dc9471eede9051ccef8",
+      "repo": "busungtk-kitchen-simulator"
+    },
+    {
+      "sha": "877bca5",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:42Z",
+      "url": "https://github.com/junyoungjang976/busungtk-kitchen-planner/commit/877bca54e1d911edd430e81d071da58c05e5e093",
+      "repo": "busungtk-kitchen-planner"
+    },
+    {
+      "sha": "97a170f",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:42Z",
+      "url": "https://github.com/junyoungjang976/busungtk-hvac-mentor/commit/97a170fb8e91bf461fb1e0596fb86100b8e0263e",
+      "repo": "busungtk-hvac-mentor"
+    },
+    {
+      "sha": "07b3564",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:42Z",
+      "url": "https://github.com/junyoungjang976/busungtk-hub/commit/07b356421a225590b2b961c7f57f5b1f37f94ec5",
+      "repo": "busungtk-hub"
+    },
+    {
+      "sha": "e670bc4",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:41Z",
+      "url": "https://github.com/junyoungjang976/busungtk-equipment/commit/e670bc457594739d62d363632c19a1ba5c7eeea1",
+      "repo": "busungtk-equipment"
+    },
+    {
+      "sha": "e3ecdd0",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:41Z",
+      "url": "https://github.com/junyoungjang976/busungtk-field-check/commit/e3ecdd025319a362967671586d3f5bb45829ee6d",
+      "repo": "busungtk-field-check"
+    },
+    {
+      "sha": "1715a18",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:41Z",
+      "url": "https://github.com/junyoungjang976/busungtk-daily-report/commit/1715a18e3297f4d2fe7cd186970d544edb1ebd1e",
+      "repo": "busungtk-daily-report"
+    },
+    {
+      "sha": "1ae44a7",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:40Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/1ae44a72a337866321ed171b71d6baceb528c56c",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "7096895",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:40Z",
+      "url": "https://github.com/junyoungjang976/busungtk-as-diagnosis/commit/7096895b147593577b4513680a5ca3a0e6393157",
+      "repo": "busungtk-as-diagnosis"
+    },
+    {
+      "sha": "90544e6",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:40Z",
+      "url": "https://github.com/junyoungjang976/busungtk-ai-trends/commit/90544e6929487719bfb43e88f80d2e26d536f2ed",
+      "repo": "busungtk-ai-trends"
+    },
+    {
+      "sha": "b8fd5c1",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:39Z",
+      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/b8fd5c1eb64d5aec5d5822f0119ebd11089bf956",
+      "repo": "busungtk-ai-ideation"
+    },
+    {
+      "sha": "1d937b4",
+      "message": "chore: 임시 스크립트 및 출력물 삭제",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:24:09Z",
+      "url": "https://github.com/junyoungjang976/busungtk-kitchen-planner/commit/1d937b4203ad8156a14389e39854ebc236197135",
+      "repo": "busungtk-kitchen-planner"
+    },
+    {
+      "sha": "a3187e3",
+      "message": "chore: Claude 임시 보고서 파일 2개 삭제",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:24:05Z",
+      "url": "https://github.com/junyoungjang976/busungtk-sales-pipeline/commit/a3187e30a3ef7b668ce61ef9790ee926821a1fbf",
+      "repo": "busungtk-sales-pipeline"
+    },
+    {
+      "sha": "0683092",
+      "message": "chore: Claude QA 보고서 파일 삭제",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:24:00Z",
+      "url": "https://github.com/junyoungjang976/busungtk-hvac-mentor/commit/06830923277e380603ccc009c89361c7533e0c34",
+      "repo": "busungtk-hvac-mentor"
+    },
+    {
+      "sha": "d597aa4",
+      "message": "chore: Claude 임시 보고서 파일 7개 삭제",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:23:56Z",
+      "url": "https://github.com/junyoungjang976/busungtk-field-check/commit/d597aa45d9abae2814b3fa7434f5225c7148dbf2",
+      "repo": "busungtk-field-check"
+    },
+    {
+      "sha": "9cd3e1d",
+      "message": "chore: Claude 임시 보고서 파일 5개 삭제",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:23:51Z",
+      "url": "https://github.com/junyoungjang976/busungtk-as-diagnosis/commit/9cd3e1d8b1577c6a941781c0b2f1bbbdee69c977",
+      "repo": "busungtk-as-diagnosis"
+    },
+    {
+      "sha": "ff46e49",
+      "message": "chore: 빈 서브프로젝트 폴더 8개 삭제",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:21:43Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/ff46e496022997b5403ade5d70823340a9d2bfa9",
+      "repo": "busungtk-asms"
+    },
     {
       "sha": "c6be2e5",
       "message": "docs: CLAUDE.md 정리 (프로젝트별 고유 정보 + 공통 규칙)",
@@ -265,20 +457,20 @@
       "repo": "busungtk-hub"
     },
     {
-      "sha": "ce06ec8",
-      "message": "docs: CLAUDE.md 정리 (프로젝트별 고유 정보 + 공통 규칙)",
-      "author": "jangjoonyoung",
-      "date": "2026-02-14T02:14:04Z",
-      "url": "https://github.com/junyoungjang976/busungtk-field-check/commit/ce06ec899a1c306810de1d9b44bd2a1c88f5be9b",
-      "repo": "busungtk-field-check"
-    },
-    {
       "sha": "bb16b50",
       "message": "docs: CLAUDE.md 정리 (프로젝트별 고유 정보 + 공통 규칙)",
       "author": "jangjoonyoung",
       "date": "2026-02-14T02:14:04Z",
       "url": "https://github.com/junyoungjang976/busungtk-equipment/commit/bb16b50d7d37f082ae70f7d389b1b0706a6a387d",
       "repo": "busungtk-equipment"
+    },
+    {
+      "sha": "ce06ec8",
+      "message": "docs: CLAUDE.md 정리 (프로젝트별 고유 정보 + 공통 규칙)",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:14:04Z",
+      "url": "https://github.com/junyoungjang976/busungtk-field-check/commit/ce06ec899a1c306810de1d9b44bd2a1c88f5be9b",
+      "repo": "busungtk-field-check"
     },
     {
       "sha": "a23dbbd",
@@ -297,6 +489,14 @@
       "repo": "busungtk-asms"
     },
     {
+      "sha": "2394423",
+      "message": "docs: CLAUDE.md 정리 (프로젝트별 고유 정보 + 공통 규칙)",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:14:03Z",
+      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/23944236ddee8246bda54d4fef04fad3d75aacd7",
+      "repo": "busungtk-ai-ideation"
+    },
+    {
       "sha": "3abc675",
       "message": "docs: CLAUDE.md 정리 (프로젝트별 고유 정보 + 공통 규칙)",
       "author": "jangjoonyoung",
@@ -311,14 +511,6 @@
       "date": "2026-02-14T02:14:03Z",
       "url": "https://github.com/junyoungjang976/busungtk-ai-trends/commit/0b759190e7b6a984b8c39fd4be0792391f8899e2",
       "repo": "busungtk-ai-trends"
-    },
-    {
-      "sha": "2394423",
-      "message": "docs: CLAUDE.md 정리 (프로젝트별 고유 정보 + 공통 규칙)",
-      "author": "jangjoonyoung",
-      "date": "2026-02-14T02:14:03Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/23944236ddee8246bda54d4fef04fad3d75aacd7",
-      "repo": "busungtk-ai-ideation"
     },
     {
       "sha": "4e4fc11",
@@ -1582,198 +1774,6 @@
       "author": "junyoungjang976",
       "date": "2026-02-06T14:33:32Z",
       "url": "https://github.com/junyoungjang976/busungtk-asms/commit/8d30573242afd34d2df55457038b9d6ee2496de0",
-      "repo": "busungtk-asms"
-    },
-    {
-      "sha": "606f206",
-      "message": "Merge pull request #2 from junyoungjang976/codex/plan-ai-simulator-for-kitchen-layout",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T14:33:17Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/606f206fc0f60fc6198574458736859873e70319",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "722a341",
-      "message": "Add kitchen layout simulator plan",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T14:32:36Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/722a34160218cc2aff7bf909b48185a2f0c6c0ef",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "f887703",
-      "message": "Merge pull request #1 from junyoungjang976/codex/document-project-ideas-for-ai-ideation-lab",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T14:12:34Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/f88770385f8e3c115f6d344d4ab2886a40b6feec",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "68f0509",
-      "message": "Create problem.md",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T14:06:00Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/68f0509e5cda80912afc745e5fe37dfe6149d6a0",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "80e75b1",
-      "message": "Document AI trend assistant dashboard idea",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T13:59:27Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/80e75b18bedcb86996187ca7acff2bd54d819878",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "b5219fb",
-      "message": "Create tradeoffs.md",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T13:45:37Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/b5219fbb52551650e3f34a8ddc0b7a3a1eb93d89",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "5b34522",
-      "message": "Create structure.md",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T13:45:18Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/5b34522fb108e95e4a8550ca4215bfdc2adca25f",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "931f127",
-      "message": "Create problem.md",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T13:44:30Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/931f1279315c47177165eb7200f281d2cfb87690",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "b398747",
-      "message": "Create decision-principles.md",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T13:41:52Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/b39874720aedc66e569a6633bfefbbdd7854fe1d",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "fa1bd74",
-      "message": "Create README.md",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T13:39:33Z",
-      "url": "https://github.com/junyoungjang976/busungtk-ai-ideation/commit/fa1bd74dddd73aed60dbe06f208ce77fb8a79b0f",
-      "repo": "busungtk-ai-ideation"
-    },
-    {
-      "sha": "57a1c13",
-      "message": "Update CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:46Z",
-      "url": "https://github.com/junyoungjang976/busungtk-sales-pipeline/commit/57a1c134b31f371aa842908e1e017cf51fe28b0c",
-      "repo": "busungtk-sales-pipeline"
-    },
-    {
-      "sha": "35b6e24",
-      "message": "Update CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:45Z",
-      "url": "https://github.com/junyoungjang976/busungtk-order-tracker/commit/35b6e247fe8c717e69d890f29770384789ef3e80",
-      "repo": "busungtk-order-tracker"
-    },
-    {
-      "sha": "e901bff",
-      "message": "Update CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:43Z",
-      "url": "https://github.com/junyoungjang976/busungtk-field-check/commit/e901bff316273a38b1c73d7f53ecb464d3d588b3",
-      "repo": "busungtk-field-check"
-    },
-    {
-      "sha": "bf02f2a",
-      "message": "Update CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:42Z",
-      "url": "https://github.com/junyoungjang976/busungtk-hvac-mentor/commit/bf02f2a0ae1e5de5dc1ee9b88be974605a5ae506",
-      "repo": "busungtk-hvac-mentor"
-    },
-    {
-      "sha": "e81df4b",
-      "message": "Update CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:40Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/e81df4bf4eaf41ce74804f40257af3fa0704dd02",
-      "repo": "busungtk-asms"
-    },
-    {
-      "sha": "6135614",
-      "message": "Update CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:39Z",
-      "url": "https://github.com/junyoungjang976/busungtk-portal/commit/61356143b09be183d4fabe45d87df2abb5560688",
-      "repo": "busungtk-portal"
-    },
-    {
-      "sha": "b01d926",
-      "message": "Add CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:24Z",
-      "url": "https://github.com/junyoungjang976/busungtk-purchase-data/commit/b01d926eec0ad36ef437deb891315dec8f76b40d",
-      "repo": "busungtk-purchase-data"
-    },
-    {
-      "sha": "09260b6",
-      "message": "Add CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:23Z",
-      "url": "https://github.com/junyoungjang976/busungtk-kitchen-simulator/commit/09260b6c4da746e250f63c8977805a483bc81b99",
-      "repo": "busungtk-kitchen-simulator"
-    },
-    {
-      "sha": "769bba0",
-      "message": "Add CLAUDE.md - Supabase project operating rules",
-      "author": "junyoungjang976",
-      "date": "2026-02-06T12:29:23Z",
-      "url": "https://github.com/junyoungjang976/busungtk-as-diagnosis/commit/769bba07567e2480aadcb902743f9bbd41cdc5b6",
-      "repo": "busungtk-as-diagnosis"
-    },
-    {
-      "sha": "d39a7cc",
-      "message": "fix: 견적서 삭제 시 연결된 A/S 접수 차단 로직 제거",
-      "author": "junyoungjang976",
-      "date": "2026-02-05T00:36:52Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/d39a7cc90e6829294585e194b4b004f99dc9b1ec",
-      "repo": "busungtk-asms"
-    },
-    {
-      "sha": "c4ed22a",
-      "message": "fix: Vercel 배포용 Prisma generate 추가",
-      "author": "junyoungjang976",
-      "date": "2026-02-04T14:45:02Z",
-      "url": "https://github.com/junyoungjang976/busungtk-as-diagnosis/commit/c4ed22aa0176b81be6993203d950804e5c3c38e7",
-      "repo": "busungtk-as-diagnosis"
-    },
-    {
-      "sha": "6604a9d",
-      "message": "fix: TypeScript 타입 오류 수정",
-      "author": "junyoungjang976",
-      "date": "2026-02-04T14:43:53Z",
-      "url": "https://github.com/junyoungjang976/busungtk-as-diagnosis/commit/6604a9da0778661e8a96c39c1331fc6a24a6450d",
-      "repo": "busungtk-as-diagnosis"
-    },
-    {
-      "sha": "563fa01",
-      "message": "feat: 설비 A/S 진단 도구 초기 버전",
-      "author": "junyoungjang976",
-      "date": "2026-02-04T14:41:18Z",
-      "url": "https://github.com/junyoungjang976/busungtk-as-diagnosis/commit/563fa010a07b17f8c1b7ca17583e4efc235785e2",
-      "repo": "busungtk-as-diagnosis"
-    },
-    {
-      "sha": "c8ea712",
-      "message": "refactor: 코드 품질 개선 및 QuoteForm 컴포넌트 분리",
-      "author": "junyoungjang976",
-      "date": "2026-02-04T13:52:38Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/c8ea7120fa1179632194b6f0916834e04cd5fee5",
       "repo": "busungtk-asms"
     }
   ],
