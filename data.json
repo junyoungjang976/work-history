@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-02-13T01:05:36.077784Z",
+  "updated_at": "2026-02-14T00:58:50.360995Z",
   "repos": [
     "busungtk-asms",
+    "daily-report",
     "order-tracker",
     "marketing-hub",
     "sales-crm",
-    "daily-report",
     "busungtk-hub",
     "kitchen-planner",
     "equipment-manager-v3",
@@ -21,14 +21,14 @@
     "ai-ideation-lab"
   ],
   "summary": {
-    "total_commits": 324,
+    "total_commits": 325,
     "total_prs": 2,
     "total_issues": 0,
     "active_days": 20
   },
   "daily": {
     "2026-02-13": {
-      "commits": 5,
+      "commits": 7,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -91,7 +91,7 @@
       "issues_closed": 0
     },
     "2026-02-04": {
-      "commits": 18,
+      "commits": 17,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -169,6 +169,22 @@
     }
   },
   "commits": [
+    {
+      "sha": "4e4fc11",
+      "message": "fix: 견적서/거래명세표 Excel 인쇄 레이아웃 개선",
+      "author": "junyoungjang976",
+      "date": "2026-02-13T10:23:39Z",
+      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/4e4fc11f5c75399f125e628aa219ee7fb4e80931",
+      "repo": "busungtk-asms"
+    },
+    {
+      "sha": "0a80f5c",
+      "message": "fix: 해야 할 일 무조건 자동 이월 + 중복 방지",
+      "author": "junyoungjang976",
+      "date": "2026-02-13T01:25:25Z",
+      "url": "https://github.com/junyoungjang976/daily-report/commit/0a80f5c6e220b9a855fe1d05039e992528199522",
+      "repo": "daily-report"
+    },
     {
       "sha": "7059edb",
       "message": "fix: 견적서/거래명세표 Excel A4 페이지 채움 개선",
@@ -1650,14 +1666,6 @@
       "repo": "busungtk-asms"
     },
     {
-      "sha": "1d40957",
-      "message": "fix: Extract quote amounts as purchase price (매입가)",
-      "author": "junyoungjang976",
-      "date": "2026-02-04T12:14:45Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/1d4095751efccd0bd85d1d68f1898923593f6c6d",
-      "repo": "busungtk-asms"
-    },
-    {
       "sha": "60c977f",
       "message": "feat: 발주 상세 업체 정보에 담당자/이메일 표기 추가",
       "author": "장준영",
@@ -1760,14 +1768,6 @@
       "date": "2026-02-02T09:53:57Z",
       "url": "https://github.com/junyoungjang976/hvac-mentor/commit/700c0f9cd3604c9e9cbd48912151d248c135ece5",
       "repo": "hvac-mentor"
-    },
-    {
-      "sha": "f324409",
-      "message": "Add purchase data and viewer",
-      "author": "junyoungjang976",
-      "date": "2026-02-02T09:47:37Z",
-      "url": "https://github.com/junyoungjang976/purchase-data/commit/f324409ed97b1e2f6b03d27c954c4700965ae5c8",
-      "repo": "purchase-data"
     }
   ],
   "pull_requests": [
