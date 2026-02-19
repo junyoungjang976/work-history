@@ -1,6 +1,7 @@
 {
-  "updated_at": "2026-02-19T02:51:20.370859Z",
+  "updated_at": "2026-02-19T04:06:02.161075Z",
   "repos": [
+    "busungtk-marketing",
     "busungtk-landing",
     "busungtk-ui",
     "busungtk-supabase-types",
@@ -9,7 +10,6 @@
     "busungtk-equipment",
     "busungtk-order-tracker",
     "claude-dotfiles",
-    "busungtk-marketing",
     "busungtk-sales-crm",
     "gumi-church",
     "youtube-shorts-sermon",
@@ -28,14 +28,14 @@
     "busungtk-ai-ideation"
   ],
   "summary": {
-    "total_commits": 535,
+    "total_commits": 537,
     "total_prs": 2,
     "total_issues": 0,
     "active_days": 24
   },
   "daily": {
     "2026-02-19": {
-      "commits": 30,
+      "commits": 32,
       "prs_opened": 0,
       "prs_merged": 0,
       "issues_opened": 0,
@@ -204,6 +204,22 @@
     }
   },
   "commits": [
+    {
+      "sha": "fdc6eb5",
+      "message": "chore: 디버그 코드 제거, 프로덕션 정리",
+      "author": "junyoungjang976",
+      "date": "2026-02-19T03:01:11Z",
+      "url": "https://github.com/junyoungjang976/busungtk-marketing/commit/fdc6eb506b81df6c5a9174a076c0abce46bb17c0",
+      "repo": "busungtk-marketing"
+    },
+    {
+      "sha": "86518f4",
+      "message": "debug: env var trim + 키 길이 확인",
+      "author": "junyoungjang976",
+      "date": "2026-02-19T02:56:15Z",
+      "url": "https://github.com/junyoungjang976/busungtk-marketing/commit/86518f4a10975f0aa43adde4cc421324931ae088",
+      "repo": "busungtk-marketing"
+    },
     {
       "sha": "b907b84",
       "message": "docs: README.md 추가",
@@ -1637,6 +1653,14 @@
       "repo": "busungtk-portal"
     },
     {
+      "sha": "5e3fb07",
+      "message": "chore: .gitignore 표준화",
+      "author": "jangjoonyoung",
+      "date": "2026-02-14T02:27:43Z",
+      "url": "https://github.com/junyoungjang976/busungtk-marketing/commit/5e3fb0772c8bb0335341d780e15145d79729d781",
+      "repo": "busungtk-marketing"
+    },
+    {
       "sha": "38110ed",
       "message": "chore: .gitignore 표준화",
       "author": "jangjoonyoung",
@@ -1651,14 +1675,6 @@
       "date": "2026-02-14T02:27:43Z",
       "url": "https://github.com/junyoungjang976/busungtk-order-tracker/commit/cfe31fc87edc73e21ed7382fcac1c26b732d24aa",
       "repo": "busungtk-order-tracker"
-    },
-    {
-      "sha": "5e3fb07",
-      "message": "chore: .gitignore 표준화",
-      "author": "jangjoonyoung",
-      "date": "2026-02-14T02:27:43Z",
-      "url": "https://github.com/junyoungjang976/busungtk-marketing/commit/5e3fb0772c8bb0335341d780e15145d79729d781",
-      "repo": "busungtk-marketing"
     },
     {
       "sha": "90770ae",
@@ -1787,22 +1803,6 @@
       "date": "2026-02-14T02:23:51Z",
       "url": "https://github.com/junyoungjang976/busungtk-as-diagnosis/commit/9cd3e1d8b1577c6a941781c0b2f1bbbdee69c977",
       "repo": "busungtk-as-diagnosis"
-    },
-    {
-      "sha": "ff46e49",
-      "message": "chore: 빈 서브프로젝트 폴더 8개 삭제",
-      "author": "jangjoonyoung",
-      "date": "2026-02-14T02:21:43Z",
-      "url": "https://github.com/junyoungjang976/busungtk-asms/commit/ff46e496022997b5403ade5d70823340a9d2bfa9",
-      "repo": "busungtk-asms"
-    },
-    {
-      "sha": "c6be2e5",
-      "message": "docs: CLAUDE.md 정리 (프로젝트별 고유 정보 + 공통 규칙)",
-      "author": "jangjoonyoung",
-      "date": "2026-02-14T02:14:07Z",
-      "url": "https://github.com/junyoungjang976/busungtk-sales-pipeline/commit/c6be2e5ef76d5e1474efdaa43e1228413d0ef956",
-      "repo": "busungtk-sales-pipeline"
     }
   ],
   "pull_requests": [
